@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import Navbar from "components/navbar";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -11,13 +13,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <header className="sticky top-0 h-20 w-full bg-sol-blue-accent"></header>
+        <Navbar></Navbar>
         <Masthead></Masthead>
-        <section className="mx-auto mb-10 max-w-4xl">
-          <h2 className="text-2xl font-medium text-sol-grey-accent">
+        <section
+          className="mx-auto mb-10 max-w-4xl px-4"
+          data-aos="zoom-out-up"
+        >
+          <h3 className="text-2xl font-medium text-sol-grey-accent">
             Ce este Brăila Tech Sprint?
-          </h2>
-          <div className="mt-1 mb-4 h-1 w-16 bg-green-600"></div>
+          </h3>
+          <div className="mt-1 mb-4 h-1 w-16 bg-sol-green"></div>
           <p className="tracking-wide">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             facilisis velit eu molestie vulputate. Suspendisse dui dolor,
@@ -37,11 +42,14 @@ export default function Home() {
             in dui neque. Vestibulum ut commodo sapien. Suspendisse ut mi orci.
           </p>
         </section>
-        <section className="mx-auto mb-10 max-w-4xl">
-          <h2 className="text-2xl font-medium text-sol-grey-accent">
+        <section
+          className="mx-auto mb-10 max-w-4xl px-4"
+          data-aos="zoom-out-up"
+        >
+          <h3 className="text-2xl font-medium text-sol-grey-accent">
             Ediția I - 2023
-          </h2>
-          <div className="mt-1 mb-4 h-1 w-16 bg-green-600"></div>
+          </h3>
+          <div className="mt-1 mb-4 h-1 w-16 bg-sol-green"></div>
           <p className="tracking-wide">
             Donec ultricies mi at metus sollicitudin pellentesque. Sed in dui
             neque. Vestibulum ut commodo sapien. Suspendisse ut mi orci.
@@ -67,31 +75,32 @@ export default function Home() {
             vitae pretium lorem. Duis feugiat efficitur felis, et vestibulum
             urna accumsan quis. Praesent gravida erat scelerisque justo mollis.
           </p>
-          <br></br>
-          <p className="tracking-wide">
-            Vă puteți înscrie, completând următorul&nbsp;
-            <a
-              className="text-blue-500 underline"
-              target="_blank"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfIv_3d2VGq0fK3j1YAyk_P8TTSXyTbnhUwNnokqiWy1LZXPQ/viewform"
-            >
-              formular
-            </a>
-          </p>
         </section>
       </main>
+      <Footer></Footer>
     </>
   );
 }
 
 const Masthead = () => {
   return (
-    <div className="flex justify-center items-center gap-48 w-full mt-10 mb-24">
+    <div
+      className="flex justify-center items-center gap-48 w-full mt-10 mb-24"
+      data-aos="fade-down"
+    >
       <div>
-        <h1 className="text-4xl font-normal tracking-tight text-sol-grey-accent">
+        <h1 className="mb-6 text-4xl font-normal tracking-tight text-sol-grey-accent">
           Brăila <span className="font-semibold">Tech</span>
-          <span className="text-green-600 font-semibold"> Sprint</span>
+          <span className="text-sol-green font-semibold"> Sprint</span>
         </h1>
+        <button
+          className="uppercase font-medium tracking-wider py-2 px-6 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg  hover:shadow-lg hover:translate-x-1 hover:-translate-y-1 transition duration-200"
+          onClick={() =>
+            window.open("https://forms.gle/jjmE6cENHd9zA58V7", "_blank")
+          }
+        >
+          Înscrie-te
+        </button>
       </div>
 
       <Image

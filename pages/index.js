@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Navbar from "components/navbar";
 import Footer from "@/components/footer";
 import Terminal from "@/components/terminal";
@@ -8,17 +7,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Brăila Tech Sprint</title>
         <meta name="description" content="Brăila IT hackathon landing page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar></Navbar>
       <main>
-        <Navbar></Navbar>
         <Masthead></Masthead>
         <section
           className="mx-auto mb-10 w-full md:max-w-4xl px-4"
-          data-aos="zoom-out-up"
+          data-aos="fade-down"
         >
           <h3 className="text-2xl font-medium text-sol-grey-accent">
             Ce este Brăila Tech Sprint?
@@ -44,8 +43,8 @@ export default function Home() {
           </p>
         </section>
         <section
-          className="mx-auto mb-10 w-full md:max-w-4xl px-4"
-          data-aos="zoom-out-up"
+          className="mx-auto mb-10 w-full md:max-w-4xl px-6"
+          data-aos="fade-down"
         >
           <h3 className="text-2xl font-medium text-sol-grey-accent">
             Ediția I - 2023
@@ -86,7 +85,7 @@ export default function Home() {
 const Masthead = () => {
   return (
     <div
-      data-aos="fade-down"
+      data-aos="zoom-in"
       className="min-h-screen flex flex-col items-center justify-center p-8"
     >
       <div className="max-w-6xl flex flex-col lg:flex-row justify-center items-center gap-x-20 gap-y-10 w-full mt-16 mb-20 mx-auto">
@@ -95,7 +94,7 @@ const Masthead = () => {
             Brăila <span className="font-semibold">Tech</span>
             <span className="text-sol-green font-semibold"> Sprint</span>
           </h1>
-          <p className="">
+          <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s

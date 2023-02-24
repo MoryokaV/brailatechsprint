@@ -83,8 +83,8 @@ export default function Team() {
       </Head>
       <Navbar></Navbar>
       <section
-        className="mx-auto mt-14 mb-10 max-w-4xl px-4"
-        data-aos="zoom-out-up"
+        className="mx-auto mt-14 mb-10 w-full md:max-w-4xl px-4"
+        data-aos="fade-down"
       >
         <h1 className="mb-6 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
           Cine suntem noi?
@@ -102,11 +102,14 @@ export default function Team() {
           lacus, laoreet sed laoreet vitae, condimentum iaculis libero.
         </p>
       </section>
-      <section className="mx-auto mb-20 max-w-4xl px-4" data-aos="zoom-out-up">
+      <section
+        className="mx-auto mb-20 w-full md:max-w-4xl px-4"
+        data-aos="fade-down"
+      >
         <h1 className="mb-8 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
           Echipa organizatoare
         </h1>
-        <ul className="flex list-none mx-auto justify-center flex-wrap max-w-4xl gap-10">
+        <ul className="flex list-none mx-auto justify-center flex-wrap gap-10">
           {teamMembers.map((member, index) => (
             <li key={index} className="flex flex-col items-center">
               <Image
@@ -145,7 +148,10 @@ export default function Team() {
           ))}
         </ul>
       </section>
-      <section className="mx-auto mb-10 max-w-4xl px-4" data-aos="zoom-out-up">
+      <section
+        className="mx-auto mb-10 w-full md:max-w-4xl px-4"
+        data-aos="fade-down"
+      >
         <h1 className="mb-4 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
           Juriul
         </h1>

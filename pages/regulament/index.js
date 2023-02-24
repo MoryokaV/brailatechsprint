@@ -1,116 +1,93 @@
-import { useState } from "react";
-import ArchiveData from "../data/archiveData";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
+import {
+  faBook,
+  faChevronRight,
+  faFileWord,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Head from "next/head";
+import "@react-pdf-viewer/core/lib/styles/index.css";
 
-import archive_ic from "../assets/icons/file-tray-full-outline.svg";
-import arrow_ic from "../assets/icons/chevron-forward-outline.svg";
-import pdf_ic from "../assets/icons/pdf_ic.svg";
-
-import ig from "../assets/icons/instagram.png";
-import fb from "../assets/icons/facebook.png";
-import gh from "../assets/icons/github.png";
-
-const Archive = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const openFile = (file) => {
-    window.open(file);
-  };
-
+export default function Regulament() {
   return (
     <>
-      <Navbar />
-      <div className="mt-10 mb-2 flex flex-col jusify-center items-center gap-4">
-        <img
-          alt="Archive svg icon"
-          src={archive_ic}
-          className="bg-gray-300 p-4 w-28 rounded-md opacity-50 shadow-sm"
-        />
-        <h2 className="font-semibold text-4xl">Arhivă</h2>
-      </div>
-      <div className="mx-auto mb-10 md:mb-16 w-16 h-1 bg-blue-500"></div>
-      <main className="mx-auto max-w-6xl mb-6 grid grid-cols-1 md:grid-cols-[200px_1fr] justify-center gap-4 md:gap-16 p-6">
-        <aside className="flex flex-row flex-wrap justify-center md:flex-col md:justify-start">
-          {ArchiveData.map((archive, index) => {
-            return (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`text-1xl md:text-2xl hover:text-blue-500 transition-all duration-300 hover:md:shadow-[-2px_0] hover:shadow-[0_2px] px-4 md:px-6 py-1 mx-2 mb-4 ${
-                  index === currentIndex &&
-                  "md:shadow-[-2px_0] shadow-[0_2px] text-blue-500"
-                }`}
-              >
-                {archive.years}
-              </button>
-            );
-          })}
-        </aside>
-        <article>
-          <h3 className="text-3xl md:text-4xl mb-3">
-            {ArchiveData[currentIndex].title}
+      <Head>
+        <title>Brăila Tech Sprint</title>
+        <meta name="description" content="Brăila IT hackathon landing page" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Navbar></Navbar>
+      <main>
+        <div
+          className="mt-10 mb-2 flex flex-col jusify-center items-center gap-4"
+          data-aos="fade-down"
+        >
+          <FontAwesomeIcon
+            icon={faBook}
+            className="bg-sol-grey/50 p-4 w-20 h-20 sm:w-28 sm:h-28 rounded-md shadow-sm"
+          ></FontAwesomeIcon>
+          <h2 className="font-semibold text-2xl sm:text-4xl">Regulament</h2>
+        </div>
+        <div
+          className="mx-auto mb-4 md:mb-8 w-16 h-1 bg-sol-green"
+          data-aos="fade-down"
+        ></div>
+        <section
+          className="mx-auto max-w-6xl mb-6 flex flex-col items-start gap-4 p-6"
+          data-aos="fade-down"
+        >
+          <h3 className="text-3xl md:text-4xl mb-3 text-sol-grey-accent">
+            Termenii si conditiile
           </h3>
-          <p className="py-1 px-3 bg-gray-200 text-gray-500 font-bold uppercase w-min whitespace-nowrap rounded-sm mb-3">
-            {ArchiveData[currentIndex].theme}
-          </p>
-          <p className="tracking-widest text-gray-400 mb-6">
-            {ArchiveData[currentIndex].date}
-          </p>
+
           <div className="flex items-center gap-4 mb-6">
-            <img src={arrow_ic} alt="arrow icon" className="w-6" />
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              className="w-3 text-sol-bright-blue flex-shrink-0"
+            ></FontAwesomeIcon>
             <p className="tracking-wide">
-              {ArchiveData[currentIndex].paragraph1}
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
             </p>
           </div>
-          {ArchiveData[currentIndex].paragraph2 && (
-            <div className="flex items-center gap-4 mb-6">
-              <img src={arrow_ic} alt="arrow icon" className="w-6" />
-              <p className="tracking-wide">
-                {ArchiveData[currentIndex].paragraph2}
-              </p>
-            </div>
-          )}
-          <footer className="w-full flex flex-wrap gap-4">
-            {ArchiveData[currentIndex].files.map((file, index) => {
-              return (
-                <div
-                  key={index}
-                  className="bg-gray-200 flex items-center gap-2 px-3 py-2 rounded-sm opacity-50 hover:opacity-100 hover:shadow cursor-pointer"
-                  onClick={() => openFile(file.file)}
-                >
-                  <img
-                    src={pdf_ic}
-                    alt="file icon"
-                    className="h-6 opacity-75"
-                  />
-                  <p>{file.name}</p>
-                </div>
-              );
-            })}
-          </footer>
-        </article>
+          <div className="flex items-center gap-4 mb-4">
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              className="w-3 text-sol-bright-blue flex-shrink-0"
+            ></FontAwesomeIcon>
+            <p className="tracking-wide">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+            </p>
+          </div>
+          <div
+            onClick={() => window.open("https://google.com")}
+            className="bg-sol-blue-accent flex items-center gap-3 px-3 py-2 rounded-sm opacity-75 hover:opacity-100 hover:shadow cursor-pointer"
+          >
+            <FontAwesomeIcon
+              icon={faFileWord}
+              className="h-6 opacity-75 text-sol-bright-blue"
+            ></FontAwesomeIcon>
+            <p>Regulament BTS.docx</p>
+          </div>
+        </section>
       </main>
-      <section className="max-w-full shadow-lg rounded-md p-4 mb-8 mx-5 sm:ml-auto sm:w-[21rem]">
-        <h4 className="font-medium mb-4">Website author</h4>
-        <div className="flex items-center justify-between flex-wrap gap-2">
-          <div className="flex gap-2 items-center">
-            <div className="bg-gray-300 font-bold rounded-full w-fit p-2">
-              VM
-            </div>
-            <p className="font-bold">Vlaviano Mario</p>
-          </div>
-          <div className="flex gap-2 ml-auto">
-            <SocialIcon
-              url="https://www.facebook.com/mario.vlaviano.75"
-              icon={fb}
-            />
-            <SocialIcon url="https://www.instagram.com/mario.vlv" icon={ig} />
-            <SocialIcon url="https://github.com/moryokav" icon={gh} />
-          </div>
-        </div>
-      </section>
-      <Footer />
+      <Footer></Footer>
     </>
   );
-};
-
-export default Archive;
+}

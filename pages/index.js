@@ -85,7 +85,7 @@ export default function Home() {
 const Masthead = () => {
   return (
     <div
-      className="flex justify-center items-center gap-48 w-full mt-10 mb-24"
+      className="flex justify-center items-center gap-48 w-full mt-10 mb-20"
       data-aos="fade-down"
     >
       <div>

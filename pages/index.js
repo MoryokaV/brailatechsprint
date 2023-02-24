@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Navbar from "components/navbar";
 import Footer from "@/components/footer";
+import Terminal from "@/components/terminal";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         <Navbar></Navbar>
         <Masthead></Masthead>
         <section
-          className="mx-auto mb-10 max-w-4xl px-4"
+          className="mx-auto mb-10 w-full md:max-w-4xl px-4"
           data-aos="zoom-out-up"
         >
           <h3 className="text-2xl font-medium text-sol-grey-accent">
@@ -43,7 +44,7 @@ export default function Home() {
           </p>
         </section>
         <section
-          className="mx-auto mb-10 max-w-4xl px-4"
+          className="mx-auto mb-10 w-full md:max-w-4xl px-4"
           data-aos="zoom-out-up"
         >
           <h3 className="text-2xl font-medium text-sol-grey-accent">
@@ -85,30 +86,32 @@ export default function Home() {
 const Masthead = () => {
   return (
     <div
-      className="flex justify-center items-center gap-48 w-full mt-10 mb-20"
       data-aos="fade-down"
+      className="min-h-screen flex flex-col items-center justify-center p-8"
     >
-      <div>
-        <h1 className="mb-6 text-4xl font-normal tracking-tight text-sol-grey-accent">
-          Brăila <span className="font-semibold">Tech</span>
-          <span className="text-sol-green font-semibold"> Sprint</span>
-        </h1>
-        <button
-          className="uppercase font-medium tracking-wider py-2 px-6 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg  hover:shadow-lg hover:translate-x-1 hover:-translate-y-1 transition duration-200"
-          onClick={() =>
-            window.open("https://forms.gle/jjmE6cENHd9zA58V7", "_blank")
-          }
-        >
-          Înscrie-te
-        </button>
+      <div className="max-w-6xl flex flex-col lg:flex-row justify-center items-center gap-x-20 gap-y-10 w-full mt-16 mb-20 mx-auto">
+        <div className="max-w-md">
+          <h1 className="mb-2 text-4xl font-normal tracking-tight text-sol-grey-accent">
+            Brăila <span className="font-semibold">Tech</span>
+            <span className="text-sol-green font-semibold"> Sprint</span>
+          </h1>
+          <p className="">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s
+          </p>
+        </div>
+        <Terminal></Terminal>
       </div>
 
-      <Image
-        src="/code images stack.png"
-        width="550"
-        height="550"
-        alt="coding images stack"
-      ></Image>
+      <button
+        className="mb-20 uppercase font-medium tracking-wider py-2 px-6 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg  hover:shadow-lg hover:-translate-y-1 transition duration-200"
+        onClick={() =>
+          window.open("https://forms.gle/jjmE6cENHd9zA58V7", "_blank")
+        }
+      >
+        Înscrie-te
+      </button>
     </div>
   );
 };

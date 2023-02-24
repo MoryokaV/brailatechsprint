@@ -1,10 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const SocialIcon = (props) => {
   return (
     props.url && (
-      <img
-        src={props.icon}
+      <FontAwesomeIcon
+        icon={props.icon}
         alt="social media icon"
-        className={`w-6 invert cursor-pointer ${props.className}`}
+        className={`w-6 cursor-pointer ${props.className}`}
         onClick={() => window.open(props.url, "_blank")}
       />
     )

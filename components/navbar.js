@@ -1,6 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -22,20 +23,16 @@ const Navbar = () => {
             Regulament
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-sol-green"></span>
           </Link>
-          <Link href="/echipa" className="group">
+          <Link href="/organizatori" className="group">
             Organizatori
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-sol-green"></span>
           </Link>
         </nav>
-        <button className="block sm:hidden" onClick={() => setMenu(!menu)}>
-          <Image
-            priority
-            src="/menu-outline.svg"
-            className="pointer-events-none"
-            height={32}
-            width={32}
-            alt="navbar menu button"
-          />
+        <button
+          className="block sm:hidden h-5 w-5"
+          onClick={() => setMenu(!menu)}
+        >
+          <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
         </button>
       </div>
       <aside
@@ -56,7 +53,7 @@ const Navbar = () => {
             Regulament
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-sol-green"></span>
           </Link>
-          <Link href="/echipa" className="group">
+          <Link href="/organizatori" className="group">
             Organizatori
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-sol-green"></span>
           </Link>

@@ -7,8 +7,6 @@ Un hackathon (în română scris și hackaton, cunoscut și ca hack day, hackfes
 ## Mulțumiri speciale
 
  - [Biblioteca Județeană „Panait Istrati”, Brăila](https://www.bjbraila.ro/)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
 
 
 ## Demo

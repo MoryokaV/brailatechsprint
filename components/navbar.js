@@ -7,7 +7,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className="sticky z-10 top-0 left-0 right-0 w-screen bg-sol-blue-accent/50 backdrop-blur-lg">
+    <header className="sticky z-10 top-0 left-0 right-0 w-full bg-sol-blue-accent/50 backdrop-blur-lg">
       <div className="h-full max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         <h2 className="text-sol-grey-accent text-xl">
           <span className="text-lg font-bold">~</span>

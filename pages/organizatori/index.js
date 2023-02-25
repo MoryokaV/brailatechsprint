@@ -13,7 +13,7 @@ export default function Team() {
   const teamMembers = [
     {
       name: "Corina Ciuraru",
-      role: "Manager IT BJPI ??",
+      role: "Sef serviciu BJPI ??",
       image:
         "https://scontent.fotp3-3.fna.fbcdn.net/v/t1.6435-9/54432253_2572620466099135_8562838330524303360_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=ahDGg7VQ184AX8wBgSA&_nc_ht=scontent.fotp3-3.fna&oh=00_AfBazXPZNggWQWt0dAvAB04n-ubw33xTsIleSuTi1faqeQ&oe=64205008",
       social: {
@@ -41,7 +41,8 @@ export default function Team() {
     {
       name: "Ștefan Ghețu",
       role: "Junior dev",
-      image: "https://archive.andreiusq.dev/jsclub/img/ghetu.png",
+      image:
+        "https://scontent.fotp3-3.fna.fbcdn.net/v/t39.30808-6/333593649_1076011136449124_9108875062245308493_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IU3gaEuw-xIAX-pScsP&_nc_ht=scontent.fotp3-3.fna&oh=00_AfDTSA0DaXCJLsW4pfvSjpn1cuo-LmK2I210fCDZKOAVSA&oe=63FFBD3C",
       social: {
         instagram: "https://www.instagram.com/1grizz5/",
         github: "https://github.com/ursus161",

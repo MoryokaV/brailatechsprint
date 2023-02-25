@@ -43,7 +43,7 @@ export default function Home() {
           </p>
         </section>
         <section
-          className="mx-auto mb-10 w-full md:max-w-4xl px-6"
+          className="mx-auto mb-16 w-full md:max-w-4xl px-4"
           data-aos="fade-down"
         >
           <h3 className="text-2xl font-medium text-sol-grey-accent">
@@ -86,9 +86,9 @@ const Masthead = () => {
   return (
     <div
       data-aos="zoom-in"
-      className="min-h-screen flex flex-col items-center justify-center p-8"
+      className="min-h-screen flex flex-col items-center justify-center p-8 mb-8"
     >
-      <div className="max-w-6xl flex flex-col lg:flex-row justify-center items-center gap-x-20 gap-y-10 w-full mt-16 mb-20 mx-auto">
+      <div className="max-w-6xl flex flex-col lg:flex-row justify-center items-center gap-x-20 gap-y-10 w-full mt-4 sm:mt-16 mb-14 sm:mb-20 mx-auto">
         <div className="max-w-md">
           <h1 className="mb-2 text-4xl font-normal tracking-tight text-sol-grey-accent">
             Brăila <span className="font-semibold">Tech</span>
@@ -104,7 +104,7 @@ const Masthead = () => {
       </div>
 
       <button
-        className="mb-20 uppercase font-medium tracking-wider py-2 px-6 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg  hover:shadow-lg hover:-translate-y-1 transition duration-200"
+        className="uppercase font-medium tracking-wider py-2 px-6 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg  hover:shadow-lg hover:-translate-y-1 transition duration-200"
         onClick={() =>
           window.open("https://forms.gle/jjmE6cENHd9zA58V7", "_blank")
         }

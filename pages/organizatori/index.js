@@ -13,9 +13,9 @@ export default function Team() {
   const teamMembers = [
     {
       name: "Corina Ciuraru",
-      role: "Sef serviciu BJPI ??",
+      role: "Șef serviciu Biblioteca Județeană Brăila",
       image:
-        "https://scontent.fotp3-3.fna.fbcdn.net/v/t1.6435-9/54432253_2572620466099135_8562838330524303360_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=ahDGg7VQ184AX8wBgSA&_nc_ht=scontent.fotp3-3.fna&oh=00_AfBazXPZNggWQWt0dAvAB04n-ubw33xTsIleSuTi1faqeQ&oe=64205008",
+        "https://scontent.fotp3-3.fna.fbcdn.net/v/t1.6435-9/45400885_2361450630549454_5961475363455369216_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGJwtcs_FSZ31XebU5Vi-pWCYWwB2CIuq4JhbAHYIi6rh_OUg2YCj_DlHKePA9kys77D9s8M-XmPU6JLGNpMelz&_nc_ohc=KzgRpDqeRIUAX9C6cWl&_nc_ht=scontent.fotp3-3.fna&oh=00_AfAb4Yx04lWGDVnLXSEheODOX5aqnJNTKd7-8FBtAMTPdw&oe=64253184",
       social: {
         github: "https://www.facebook.com/corina.ciuraru",
       },

@@ -1,14 +1,15 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import {
-  faBook,
-  faChevronRight,
-  faFileWord,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBook, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
+import htmlParser from "html-react-parser";
+import { RegulamentDoc } from "data/regulament";
+import { useState } from "react";
 
 export default function Regulament() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   return (
     <>
       <Head>
@@ -18,74 +19,68 @@ export default function Regulament() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar></Navbar>
-      <main>
-        <div
-          className="mt-10 mb-2 flex flex-col jusify-center items-center gap-4"
-          data-aos="fade-down"
-        >
-          <FontAwesomeIcon
-            icon={faBook}
-            className="bg-sol-grey/50 p-4 w-20 h-20 sm:w-28 sm:h-28 rounded-md shadow-sm"
-          ></FontAwesomeIcon>
-          <h2 className="font-semibold text-2xl sm:text-4xl">Regulament</h2>
-        </div>
-        <div
-          className="mx-auto mb-4 md:mb-8 w-16 h-1 bg-sol-green"
-          data-aos="fade-down"
-        ></div>
-        <section
-          className="mx-auto max-w-6xl mb-6 flex flex-col items-start gap-4 p-6"
-          data-aos="fade-down"
-        >
-          <h3 className="text-3xl md:text-4xl mb-3 text-sol-grey-accent">
-            Termenii si conditiile
-          </h3>
+      <div
+        className="mt-10 mb-2 flex flex-col jusify-center items-center gap-4"
+        data-aos="fade-down"
+      >
+        <FontAwesomeIcon
+          icon={faBook}
+          className="bg-sol-grey/50 p-4 w-20 h-20 sm:w-28 sm:h-28 rounded-md shadow-sm"
+        ></FontAwesomeIcon>
+        <h2 className="font-semibold text-2xl sm:text-4xl">Regulament</h2>
+      </div>
+      <div
+        className="mx-auto mb-4 lg:mb-8 w-16 h-1 bg-sol-green"
+        data-aos="fade-down"
+      ></div>
+      <main
+        data-aos="fade-down"
+        className="mx-auto max-w-7xl mb-6 grid grid-cols-1 lg:grid-cols-[325px_1fr] justify-center gap-4 lg:gap-12 p-6"
+      >
+        <aside className="flex flex-row flex-wrap justify-center lg:flex-col lg:justify-start">
+          {RegulamentDoc.map((section, index) => {
+            return (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`lg:text-xl hover:text-sol-bright-blue transition-all duration-300 hover:lg:shadow-[-2px_0] hover:shadow-[0_2px] px-4 lg:px-6 py-1 mx-2 mb-6 text-start opacity-75 hover:opacity-100 ${
+                  index === currentIndex &&
+                  "lg:shadow-[-2px_0] shadow-[0_2px] text-sol-bright-blue opacity-100"
+                }`}
+              >
+                {index + 1}. {section.title}
+              </button>
+            );
+          })}
+        </aside>
 
-          <div className="flex items-center gap-4 mb-6">
-            <FontAwesomeIcon
-              icon={faChevronRight}
-              className="w-3 text-sol-bright-blue flex-shrink-0"
-            ></FontAwesomeIcon>
-            <p className="tracking-wide">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrys standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </p>
-          </div>
-          <div className="flex items-center gap-4 mb-4">
-            <FontAwesomeIcon
-              icon={faChevronRight}
-              className="w-3 text-sol-bright-blue flex-shrink-0"
-            ></FontAwesomeIcon>
-            <p className="tracking-wide">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrys standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-            </p>
-          </div>
-          <div
-            onClick={() => window.open("https://google.com")}
-            className="bg-sol-blue-accent flex items-center gap-3 px-3 py-2 rounded-sm opacity-75 hover:opacity-100 hover:shadow cursor-pointer"
-          >
-            <FontAwesomeIcon
-              icon={faFileWord}
-              className="h-6 opacity-75 text-sol-bright-blue"
-            ></FontAwesomeIcon>
-            <p>Regulament BTS.docx</p>
-          </div>
-        </section>
+        <article className="flex flex-col items-start gap-4">
+          <h3 className="text-3xl lg:text-4xl text-sol-grey-accent">
+            {RegulamentDoc[currentIndex].title}
+          </h3>
+          <p className="py-1 px-4 bg-sol-dark-blue/50 text-sol-grey/75 font-bold uppercase w-min whitespace-nowrap rounded-sm mb-3 tracking-wider">
+            Ediția I
+          </p>
+
+          {RegulamentDoc[currentIndex].paragraphs.map((content, index) => {
+            return (
+              <div key={index} className="flex items-center gap-4 mb-4">
+                <FontAwesomeIcon
+                  icon={faChevronRight}
+                  className="w-[10px] text-sol-bright-blue flex-shrink-0"
+                ></FontAwesomeIcon>
+                <section className="tracking-wide">
+                  {htmlParser(content)}
+                </section>
+              </div>
+            );
+          })}
+        </article>
       </main>
+      <p className="italic opacity-75 mb-8 text-center px-4">
+        Orice întrebare sau solicitare de informații suplimentare despre
+        hackathon poate fi trimisă pe adresa de email.
+      </p>
       <Footer></Footer>
     </>
   );

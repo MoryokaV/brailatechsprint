@@ -16,7 +16,7 @@ export default function Home() {
       <main>
         <Masthead></Masthead>
         <section
-          className="mx-auto mb-10 w-full md:max-w-4xl px-4"
+          className="mx-auto mb-16 w-full md:max-w-4xl px-4"
           data-aos="fade-down"
         >
           <h3 className="text-2xl font-medium text-sol-grey-accent">
@@ -24,58 +24,59 @@ export default function Home() {
           </h3>
           <div className="mt-1 mb-4 h-1 w-16 bg-sol-green"></div>
           <p className="tracking-wide">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            facilisis velit eu molestie vulputate. Suspendisse dui dolor,
-            lobortis non tortor mattis, feugiat maximus enim. Pellentesque at
-            elementum augue, sit amet pretium leo. Vivamus sit amet mattis
-            metus, non volutpat metus. Nullam gravida augue sed maximus mollis.
-            Nulla a massa ligula. Maecenas laoreet dapibus luctus. Curabitur
-            auctor diam vitae lacus mollis tempor. Sed sit amet mattis mauris,
-            vitae pretium lorem. Duis feugiat efficitur felis, et vestibulum
-            urna accumsan quis. Praesent gravida erat scelerisque justo mollis,
-            vitae ornare sapien tempus. Phasellus in odio pellentesque tellus
-            dapibus molestie a sit amet metus. Donec sagittis, velit non
-            imperdiet sagittis, augue risus mattis dui, ultricies elementum
-            nulla turpis dictum ante. Aenean fringilla efficitur lacinia. Fusce
-            semper orci eu euismod condimentum. Ut quis nunc in magna faucibus
-            volutpat. Donec ultricies mi at metus sollicitudin pellentesque. Sed
-            in dui neque. Vestibulum ut commodo sapien. Suspendisse ut mi orci.
+            BTS este o ușă deschisă către viitor, o modalitate de a-ți testa
+            limitele, cunoștințele, de a înțelege mai bine ce vrei să devii.
+            Alege să ieși din zona de confort, pentru a evolua! Mintea va lucra
+            în condiții de competiție, vei dori să faci parte dintr-o echipă
+            puternică sau, poate, vei concura singur, dar, la final, trebuie să
+            convingi juriul că soluția ta informatică este cea mai smart dintre
+            toate. Întâlnirea cu performanța brăileană în informatică și
+            tehnologiile viitorul este la Biblioteca Județeană ”Panait Istrati”!
+            Lasă consola să se odihnească acasă și vino să ne arăți că ai cea
+            mai tare idee de proiect, numai bună de a deveni, mai târziu,
+            propriul tău startup. Cu echipă sau fără, în 24 de ore, trebuie să
+            ne convingi că poți, iar noi vom premia cele mai bune inițiative. Va
+            fi greu, dar va fi frumos! Citește regulamentul și apoi înscrie-te!
+            <br></br>
+            <br></br>
+            <span className="opacity-75 italic">— Echipa de organizare</span>
           </p>
         </section>
-        <section
-          className="mx-auto mb-16 w-full md:max-w-4xl px-4"
-          data-aos="fade-down"
-        >
-          <h3 className="text-2xl font-medium text-sol-grey-accent">
-            Ediția I - 2023
-          </h3>
-          <div className="mt-1 mb-4 h-1 w-16 bg-sol-green"></div>
-          <p className="tracking-wide">
-            Donec ultricies mi at metus sollicitudin pellentesque. Sed in dui
-            neque. Vestibulum ut commodo sapien. Suspendisse ut mi orci.
-            Pellentesque et nisi quis neque faucibus viverra. Pellentesque
-            suscipit bibendum condimentum. Integer blandit justo a elit viverra,
-            eget feugiat tortor congue. Vestibulum ipsum leo, cursus eget
-            venenatis eu, venenatis eu nulla. Cras dictum tincidunt lectus
-            volutpat ultricies. Duis lobortis mauris fringilla hendrerit
-            commodo. Duis ut sodales justo, ut auctor orci. Interdum et
-            malesuada fames ac ante ipsum primis in faucibus. Aliquam ac dictum
-            metus. Vivamus leo lacus, laoreet sed laoreet vitae, condimentum
-            iaculis libero.
-          </p>
-          <br></br>
-          <p className="tracking-wide">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            facilisis velit eu molestie vulputate. Suspendisse dui dolor,
-            lobortis non tortor mattis, feugiat maximus enim. Pellentesque at
-            elementum augue, sit amet pretium leo. Vivamus sit amet mattis
-            metus, non volutpat metus. Nullam gravida augue sed maximus mollis.
-            Nulla a massa ligula. Maecenas laoreet dapibus luctus. Curabitur
-            auctor diam vitae lacus mollis tempor. Sed sit amet mattis mauris,
-            vitae pretium lorem. Duis feugiat efficitur felis, et vestibulum
-            urna accumsan quis. Praesent gravida erat scelerisque justo mollis.
-          </p>
-        </section>
+        {/*        <section
+                    className="mx-auto mb-16 w-full md:max-w-4xl px-4"
+                    data-aos="fade-down"
+                  >
+                    <h3 className="text-2xl font-medium text-sol-grey-accent">
+                      Ediția I - 2023
+                    </h3>
+                    <div className="mt-1 mb-4 h-1 w-16 bg-sol-green"></div>
+                    <p className="tracking-wide">
+                      Donec ultricies mi at metus sollicitudin pellentesque. Sed in dui
+                      neque. Vestibulum ut commodo sapien. Suspendisse ut mi orci.
+                      Pellentesque et nisi quis neque faucibus viverra. Pellentesque
+                      suscipit bibendum condimentum. Integer blandit justo a elit viverra,
+                      eget feugiat tortor congue. Vestibulum ipsum leo, cursus eget
+                      venenatis eu, venenatis eu nulla. Cras dictum tincidunt lectus
+                      volutpat ultricies. Duis lobortis mauris fringilla hendrerit
+                      commodo. Duis ut sodales justo, ut auctor orci. Interdum et
+                      malesuada fames ac ante ipsum primis in faucibus. Aliquam ac dictum
+                      metus. Vivamus leo lacus, laoreet sed laoreet vitae, condimentum
+                      iaculis libero.
+                    </p>
+                    <br></br>
+                    <p className="tracking-wide">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                      facilisis velit eu molestie vulputate. Suspendisse dui dolor,
+                      lobortis non tortor mattis, feugiat maximus enim. Pellentesque at
+                      elementum augue, sit amet pretium leo. Vivamus sit amet mattis
+                      metus, non volutpat metus. Nullam gravida augue sed maximus mollis.
+                      Nulla a massa ligula. Maecenas laoreet dapibus luctus. Curabitur
+                      auctor diam vitae lacus mollis tempor. Sed sit amet mattis mauris,
+                      vitae pretium lorem. Duis feugiat efficitur felis, et vestibulum
+                      urna accumsan quis. Praesent gravida erat scelerisque justo mollis.
+                    </p>
+                  </section>
+          */}
       </main>
       <Footer></Footer>
     </>
@@ -95,9 +96,8 @@ const Masthead = () => {
             <span className="text-sol-green font-semibold"> Sprint</span>
           </h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s
+            Hackathon Ediția I, 8-9 aprilie 2023 Biblioteca Județeană ”Panait
+            Istrati” Brăila
           </p>
         </div>
         <Terminal></Terminal>

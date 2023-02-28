@@ -28,3 +28,7 @@ a {
   flex-direction: column;
   min-height: 100vh;
 }
+
+.doc-list {
+  list-style: inside;
+}

@@ -91,16 +91,21 @@ export default function Team() {
           Cine suntem noi?
         </h1>
         <p className="tracking-wide text-center">
-          Donec ultricies mi at metus sollicitudin pellentesque. Sed in dui
-          neque. Vestibulum ut commodo sapien. Suspendisse ut mi orci.
-          Pellentesque et nisi quis neque faucibus viverra. Pellentesque
-          suscipit bibendum condimentum. Integer blandit justo a elit viverra,
-          eget feugiat tortor congue. Vestibulum ipsum leo, cursus eget
-          venenatis eu, venenatis eu nulla. Cras dictum tincidunt lectus
-          volutpat ultricies. Duis lobortis mauris fringilla hendrerit commodo.
-          Duis ut sodales justo, ut auctor orci. Interdum et malesuada fames ac
-          ante ipsum primis in faucibus. Aliquam ac dictum metus. Vivamus leo
-          lacus, laoreet sed laoreet vitae, condimentum iaculis libero.
+          Noi suntem echipa convinsă că Brăila trebuie să aibă propriul
+          hackathon, că, pe lângă atâtea inițiative locale de robotică,
+          informatică etc, avem nevoie de cât mai multe competiții care să
+          demonstreze că tinerii noștri sunt bine pregătiți pentru Era digitală.
+          Ne-am sfătuit, am visat, am planificat, am muncit și, acum, anunțăm cu
+          entuziasm primul hackathon local, Brăila Tech Sprint 2023. Sperăm să
+          scoatem la iveală tot ceea ce este mai bun în materie de programare în
+          Brăila și să inspirăm tinerii să urmeze acest drum în viață. Energia
+          noastră nu ar fi fost suficientă, dacă nu am fi avut alături de noi
+          Biblioteca Județeană ”Panait Istrati” Brăila, Consiliul Județean
+          Brăila, Inspectoratul Școlar Județean, dar și diverși sponsori.
+          Oricine dorește să susțină performanța tinerilor programatori
+          brăileni, este invitat să ni se alăture contactându-ne la adresa de
+          email. Fiecare mână întinsă este de ajutor, evenimentul BTS va deveni
+          mai bun și vom aprecia acest lucru.
         </p>
       </section>
       <section

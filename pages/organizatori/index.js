@@ -41,8 +41,7 @@ export default function Team() {
     {
       name: "Ștefan Ghețu",
       role: "Junior dev",
-      image:
-        "https://scontent.fotp3-3.fna.fbcdn.net/v/t39.30808-6/333593649_1076011136449124_9108875062245308493_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IU3gaEuw-xIAX-pScsP&_nc_ht=scontent.fotp3-3.fna&oh=00_AfDTSA0DaXCJLsW4pfvSjpn1cuo-LmK2I210fCDZKOAVSA&oe=63FFBD3C",
+      image: "https://i.imgur.com/GHYpNFG.jpeg",
       social: {
         instagram: "https://www.instagram.com/1grizz5/",
         github: "https://github.com/ursus161",
@@ -52,28 +51,34 @@ export default function Team() {
 
   const judges = [
     {
-      name: "Aura Ion",
-      role: "Inspector judetean informatica",
+      name: "Prof. Aurelia Ion",
+      role: "Inspector şcolar informatică",
       image:
-        "https://scontent.fotp3-3.fna.fbcdn.net/v/t39.30808-6/298170106_6045492655478150_268128261320514689_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=174925&_nc_ohc=RgrFSqcX3KAAX9OtDi7&_nc_ht=scontent.fotp3-3.fna&oh=00_AfCTIXObaWHWdriWM7SdRTnAF8BmTz85en7LVIlH5y8CLg&oe=63FCDFB8",
+        "https://media.licdn.com/dms/image/C4E03AQGjdVSQ5wx8pw/profile-displayphoto-shrink_800_800/0/1544066474498?e=2147483647&v=beta&t=AAMyfB1_ajTRbBJT-esACw6FAIh7xudq-buBuZiXAVo",
     },
     {
-      name: "Adrian Popescu",
-      role: "Rector @ Politehnică Timișoara",
+      name: "dr. Răzvan Șolea",
+      role: "prodecan UGAL AC @ Galați",
+      image:
+        "https://i1.rgstatic.net/ii/profile.image/272667056013313-1442020300098_Q512/R-Solea.jpg",
     },
     {
-      name: "Marius Popescu",
-      role: "Rector @ Politehnică Timișoara",
+      name: "Daniel Marinescu",
+      role: "fondator IME România",
+      image:
+        "https://media.licdn.com/dms/image/C5603AQHGndFRN2Ahdg/profile-displayphoto-shrink_100_100/0/1517482037901?e=1683158400&v=beta&t=vUSg45ia9II3_tbWlkP1xjdN9sh596OJHW8DEpnl6yA",
     },
     {
-      name: "Andreea Vasilescu",
-      role: "Rector @ Politehnică Timișoara",
+      name: "Teodor Claudiu Ciuraru",
+      role: "Senior React Native Developer",
+      image:
+        "https://scontent.fclj1-2.fna.fbcdn.net/v/t1.6435-9/60069044_2730334753648400_7028177963690491904_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGbrJxMkx9nT1nZDqBdhvBsdqQI26nQ9212pAjbqdD3bSxskR9dX7tIiMKQ-SlSJnIR3Efs6XYr45omwASJau0L&_nc_ohc=J49rZ7ur5ekAX8FTtBF&_nc_ht=scontent.fclj1-2.fna&oh=00_AfBNeMNqdrKcMgdkqxValgrdGHdWiTYMW_1ehvXL7f2QfQ&oe=64285B3D",
     },
     {
       name: "Mario Vlaviano",
-      role: "Elev",
+      role: "Middle Flutter Developer - Elev",
       image:
-        "https://cngmm.ro/velocity/static/media/vlaviano.75729c3d103b167d9497.jpg",
+        "https://scontent.fclj1-2.fna.fbcdn.net/v/t39.30808-6/316830997_1321260891994877_8570911359093303250_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHgL179u2ZLe_jfMk-CCLAsG4vm2IFNoIUbi-bYgU2ghWU5vT-I7D5YctEENM0q4SqPPF7l-PFb1HRijGISdgF0&_nc_ohc=9wGu9o9BurMAX9-5Fi4&_nc_ht=scontent.fclj1-2.fna&oh=00_AfD6rBW2GcCbXdfzBCRxT4H8Jk3BtxJOjSyoSrNwSpDiVw&oe=6405D263",
     },
   ];
 
@@ -155,17 +160,20 @@ export default function Team() {
         </ul>
       </section>
       <section
-        className="mx-auto mb-10 w-full md:max-w-4xl px-4"
+        className="mx-auto mb-20 w-full md:max-w-4xl px-4"
         data-aos="fade-down"
       >
         <h1 className="mb-4 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
           Juriul
         </h1>
         <p className="tracking-wide text-center mb-10">
-          Donec ultricies mi at metus sollicitudin pellentesque. Sed in dui
-          neque.
+          BTS este despre programare, excelență în educație, antreprenoriat si
+          comunitate. De aceea i-am ales pe cei mai buni să aprecieze munca și
+          ideile pe care tu și echipa ta le veți aduce în competiție. Profesori,
+          programatori, antreprenori sunt aici să înveți de la ei și să te
+          inspire. Succes tuturor!
         </p>
-        <ul className="flex list-none mx-auto justify-center flex-wrap max-w-4xl gap-8">
+        <ul className="flex list-none mx-auto justify-center flex-wrap max-w-4xl gap-10">
           {judges.map((member, index) => (
             <li key={index} className="flex flex-col items-center">
               <Image
@@ -185,6 +193,23 @@ export default function Team() {
             </li>
           ))}
         </ul>
+      </section>
+
+      <section
+        className="mx-auto mb-10 w-full md:max-w-4xl px-4"
+        data-aos="fade-down"
+      >
+        <h1 className="mb-8 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
+          Sponsori
+        </h1>
+        <div className="flex mx-auto justify-center flex-wrap max-w-4xl gap-10">
+          <Image
+            src="http://www.ime.ro/templates/rt_camber/images/logo/dark/logo.png"
+            width="150"
+            height="150"
+            alt="IME Romania logo"
+          />
+        </div>
       </section>
 
       <Footer></Footer>

@@ -66,7 +66,7 @@ export default function Team() {
       name: "Daniel Marinescu",
       role: "fondator IME România",
       image:
-        "https://media.licdn.com/dms/image/C5603AQHGndFRN2Ahdg/profile-displayphoto-shrink_100_100/0/1517482037901?e=1683158400&v=beta&t=vUSg45ia9II3_tbWlkP1xjdN9sh596OJHW8DEpnl6yA",
+        "https://scontent.fclj1-2.fna.fbcdn.net/v/t31.18172-8/21950654_10155002333729677_8753207459080497097_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF7lvB6Km6sBTvD43VeNGNkK6T8TwiRHvwrpPxPCJEe_KGgnbCnt8I7qot-JvIElq-wNyReZB8sQy_ildyqCZUR&_nc_ohc=Ww1dwmg_5Y0AX-dOCJP&_nc_ht=scontent.fclj1-2.fna&oh=00_AfD8b9C0xIf9ZpEXlHiQGZ02ItsuflSndavxyXY4qcmwyw&oe=6429D7B2",
     },
     {
       name: "Teodor Claudiu Ciuraru",
@@ -113,6 +113,43 @@ export default function Team() {
           mai bun și vom aprecia acest lucru.
         </p>
       </section>
+
+      <section
+        className="mx-auto mb-20 w-full md:max-w-4xl px-4"
+        data-aos="fade-down"
+      >
+        <h1 className="mb-4 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
+          Juriul
+        </h1>
+        <p className="tracking-wide text-center mb-10">
+          BTS este despre programare, excelență în educație, antreprenoriat si
+          comunitate. De aceea i-am ales pe cei mai buni să aprecieze munca și
+          ideile pe care tu și echipa ta le veți aduce în competiție. Profesori,
+          programatori, antreprenori sunt aici să înveți de la ei și să te
+          inspire. Succes tuturor!
+        </p>
+        <ul className="flex list-none mx-auto justify-center flex-wrap max-w-4xl gap-10">
+          {judges.map((member, index) => (
+            <li key={index} className="flex flex-col items-center">
+              <Image
+                className="mb-4 rounded-full border-sol-bright-blue border-2"
+                src={member.image}
+                alt={member.name}
+                style={{ objectFit: "cover" }}
+                width="200"
+                height="200"
+              />
+              <div>
+                <h2 className="font-semibold text-2xl text-center">
+                  {member.name}
+                </h2>
+                <p className="text-center">{member.role}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </section>
+
       <section
         className="mx-auto mb-20 w-full md:max-w-4xl px-4"
         data-aos="fade-down"
@@ -159,41 +196,6 @@ export default function Team() {
           ))}
         </ul>
       </section>
-      <section
-        className="mx-auto mb-20 w-full md:max-w-4xl px-4"
-        data-aos="fade-down"
-      >
-        <h1 className="mb-4 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
-          Juriul
-        </h1>
-        <p className="tracking-wide text-center mb-10">
-          BTS este despre programare, excelență în educație, antreprenoriat si
-          comunitate. De aceea i-am ales pe cei mai buni să aprecieze munca și
-          ideile pe care tu și echipa ta le veți aduce în competiție. Profesori,
-          programatori, antreprenori sunt aici să înveți de la ei și să te
-          inspire. Succes tuturor!
-        </p>
-        <ul className="flex list-none mx-auto justify-center flex-wrap max-w-4xl gap-10">
-          {judges.map((member, index) => (
-            <li key={index} className="flex flex-col items-center">
-              <Image
-                className="mb-4 rounded-full border-sol-bright-blue border-2"
-                src={member.image}
-                alt={member.name}
-                style={{ objectFit: "cover" }}
-                width="200"
-                height="200"
-              />
-              <div>
-                <h2 className="font-semibold text-2xl text-center">
-                  {member.name}
-                </h2>
-                <p className="text-center">{member.role}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </section>
 
       <section
         className="mx-auto mb-10 w-full md:max-w-4xl px-4"
@@ -206,6 +208,13 @@ export default function Team() {
           <Image
             src="http://www.ime.ro/templates/rt_camber/images/logo/dark/logo.png"
             width="150"
+            height="150"
+            alt="IME Romania logo"
+          />
+          <Image
+            className="w-auto"
+            src="https://media.cylex.ro/companies/1110/99/logo/logo.jpg"
+            width="0"
             height="150"
             alt="IME Romania logo"
           />

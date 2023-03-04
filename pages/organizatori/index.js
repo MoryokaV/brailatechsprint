@@ -8,6 +8,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NextSeo } from 'next-seo';
 
 export default function Team() {
   const teamMembers = [
@@ -86,6 +87,11 @@ export default function Team() {
     <>
       <Head>
         <title>Organizatori</title>
+        <NextSeo
+  title="Braila Tech Sprint - Organizatori"
+  description="Organizatorii hackathonului organizat in Braila, Romania"
+  keywords={['hackathon', 'bts', 'brailatechsprint', 'braila', 'romania', 'it', 'tech', 'startup', 'hack', 'braila tech sprint', 'braila tech sprint 2021', 'braila tech sprint hackathon', 'braila', 'braila tech sprint hackathon 2021', 'hackathon braila', 'hackathon braila 2021', 'hackathon braila tech sprint', 'hackathon braila tech sprint 2021', 'hackathon braila tech sprint hackathon', 'hackathon', 'organizatori hackathon', 'braila organizatori', 'hackathon braila organizatori', 'hackathon braila tech sprint organizatori', 'hackathon braila tech sprint hackathon organizatori', 'hackathon braila tech sprint hackathon 2021 organizatori', 'hackathon braila tech sprint 2021 organizatori', 'hackathon braila 2021 organizatori', 'hackathon braila tech sprint hackathon 2021 organizatori', 'razvan solea', 'solea', 'daniel marinescu', 'marinescu', 'marinescu daniel', 'ciuraru', 'bjpi hackathon', 'biblioteca judeteana hackathon', 'mario vlaviano', 'vlaviano mario', 'andrei iasar', 'iasar andrei']}
+/>
       </Head>
       <Navbar></Navbar>
       <section

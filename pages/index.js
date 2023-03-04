@@ -4,6 +4,8 @@ import Footer from "@/components/footer";
 import Terminal from "@/components/terminal";
 import Image from "next/image";
 import Categories from "@/components/categories";
+import { NextSeo } from 'next-seo';
+
 
 export default function Home() {
   return (
@@ -13,6 +15,11 @@ export default function Home() {
         <meta name="description" content="Brăila IT hackathon landing page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <NextSeo
+  title="Braila Tech Sprint - Pagina principala"
+  description="Pagina principala a hackathonului organizat in Braila, Romania"
+  keywords={['hackathon', 'bts', 'brailatechsprint', 'braila', 'romania', 'it', 'tech', 'startup', 'hack', 'braila tech sprint', 'braila tech sprint 2021', 'braila tech sprint hackathon', 'braila', 'braila tech sprint hackathon 2021', 'hackathon braila', 'hackathon braila 2021', 'hackathon braila tech sprint', 'hackathon braila tech sprint 2021', 'hackathon braila tech sprint hackathon', 'hackathon']}
+/>
       </Head>
       <Navbar></Navbar>
       <main>

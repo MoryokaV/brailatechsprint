@@ -3,6 +3,7 @@ import Navbar from "components/navbar";
 import Footer from "@/components/footer";
 import Terminal from "@/components/terminal";
 import Image from "next/image";
+import Categories from "@/components/categories";
 
 export default function Home() {
   return (
@@ -43,6 +44,17 @@ export default function Home() {
             <span className="opacity-75 italic">— Echipa de organizare</span>
           </p>
         </section>
+        {<section
+                    className="mx-auto mb-16 w-full md:max-w-4xl px-4"
+                    data-aos="fade-down"
+                  >
+                    <h3 className="text-2xl font-medium text-sol-grey-accent">
+                      Categorii
+                    </h3>
+                    <div className="mt-1 mb-4 h-1 w-16 bg-sol-green"></div>
+                    <Categories />
+                  </section>
+          }
       </main>
       <Footer></Footer>
     </>

@@ -24,6 +24,16 @@ export default function Home() {
       <Navbar></Navbar>
       <main>
         <Masthead></Masthead>
+        <section 
+          className="mx-auto mb-2 w-auto md:max-w-sm px-0"
+          data-aos="fade-down"
+          >
+            <h3 className="text-2xl font-medium text-sol-grey-accent flex center justify-center"> Sponsor principal </h3>
+            <div className="mt-1 mb-4 h-1 w-38 bg-sol-green"></div>
+            <div className="flex items-center justify-center">
+            <Image src="http://www.ime.ro/templates/rt_camber/images/logo/dark/logo.png" alt="IME Romania" width={300} height={250} className="filter grayscale-100 hover:grayscale-0 transition duration-300" />
+            </div> <br></br> <br></br>
+        </section>
         <section
           className="mx-auto mb-16 w-full md:max-w-4xl px-4"
           data-aos="fade-down"

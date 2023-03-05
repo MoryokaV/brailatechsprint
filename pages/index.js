@@ -18,7 +18,7 @@ export default function Home() {
         <NextSeo
   title="Braila Tech Sprint - Pagina principala"
   description="Pagina principala a hackathonului organizat in Braila, Romania"
-  keywords={['hackathon', 'bts', 'brailatechsprint', 'braila', 'romania', 'it', 'tech', 'startup', 'hack', 'braila tech sprint', 'braila tech sprint 2021', 'braila tech sprint hackathon', 'braila', 'braila tech sprint hackathon 2021', 'hackathon braila', 'hackathon braila 2021', 'hackathon braila tech sprint', 'hackathon braila tech sprint 2021', 'hackathon braila tech sprint hackathon', 'hackathon']}
+  keywords={['hackathon', 'bts', 'brailatechsprint', 'braila', 'romania', 'it', 'tech', 'startup', 'hack', 'braila tech sprint', 'braila tech sprint 2021', 'braila tech sprint hackathon', 'braila', 'braila tech sprint hackathon 2021', 'hackathon braila', 'hackathon braila 2021', 'hackathon braila tech sprint', 'hackathon braila tech sprint 2021', 'hackathon braila tech sprint hackathon', 'hackathon', 'concurs braila', 'concurs programare braila', 'concurs programare', 'programare braila']}
 />
       </Head>
       <Navbar></Navbar>

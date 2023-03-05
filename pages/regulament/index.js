@@ -6,7 +6,7 @@ import Head from "next/head";
 import htmlParser from "html-react-parser";
 import { RegulamentDoc } from "data/regulament";
 import { useState } from "react";
-import { NextSeo } from 'next-seo';
+import { NextSeo } from "next-seo";
 
 export default function Regulament() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,10 +19,48 @@ export default function Regulament() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <NextSeo
-  title="Braila Tech Sprint - Regulament"
-  description="Regulamentul hackathonului organizat in Braila, Romania"
-  keywords={['hackathon', 'bts', 'brailatechsprint', 'braila', 'romania', 'it', 'tech', 'startup', 'hack', 'braila tech sprint', 'braila tech sprint 2021', 'braila tech sprint hackathon', 'braila', 'braila tech sprint hackathon 2021', 'hackathon braila', 'hackathon braila 2021', 'hackathon braila tech sprint', 'hackathon braila tech sprint 2021', 'hackathon braila tech sprint hackathon', 'hackathon', 'regulament bts', 'regulament hackathon', 'braila tech sprint regulament', 'tech sprint braiila regulament', 'reguli hackathon braila', 'reguli hackathon braila tech sprint', 'reguli hackathon braila tech sprint 2021', 'reguli hackathon braila tech sprint hackathon', 'reguli hackathon braila tech sprint hackathon 2021', 'reguli hackathon braila tech sprint hackathon 2021', 'hackathon braila regulament', 'hackathon braila regulament 2021', 'hackathon braila regulament', 'concurs braila', 'concurs programare braila', 'concurs programare', 'programare braila']}
-/>
+          title="Braila Tech Sprint - Regulament"
+          description="Regulamentul hackathonului organizat in Braila, Romania"
+          keywords={[
+            "hackathon",
+            "bts",
+            "brailatechsprint",
+            "braila",
+            "romania",
+            "it",
+            "tech",
+            "startup",
+            "hack",
+            "braila tech sprint",
+            "braila tech sprint 2021",
+            "braila tech sprint hackathon",
+            "braila",
+            "braila tech sprint hackathon 2021",
+            "hackathon braila",
+            "hackathon braila 2021",
+            "hackathon braila tech sprint",
+            "hackathon braila tech sprint 2021",
+            "hackathon braila tech sprint hackathon",
+            "hackathon",
+            "regulament bts",
+            "regulament hackathon",
+            "braila tech sprint regulament",
+            "tech sprint braiila regulament",
+            "reguli hackathon braila",
+            "reguli hackathon braila tech sprint",
+            "reguli hackathon braila tech sprint 2021",
+            "reguli hackathon braila tech sprint hackathon",
+            "reguli hackathon braila tech sprint hackathon 2021",
+            "reguli hackathon braila tech sprint hackathon 2021",
+            "hackathon braila regulament",
+            "hackathon braila regulament 2021",
+            "hackathon braila regulament",
+            "concurs braila",
+            "concurs programare braila",
+            "concurs programare",
+            "programare braila",
+          ]}
+        />
       </Head>
       <Navbar></Navbar>
       <div

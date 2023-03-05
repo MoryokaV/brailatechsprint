@@ -4,8 +4,7 @@ import Footer from "@/components/footer";
 import Terminal from "@/components/terminal";
 import Image from "next/image";
 import Categories from "@/components/categories";
-import { NextSeo } from 'next-seo';
-
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
@@ -16,10 +15,35 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <NextSeo
-  title="Braila Tech Sprint - Pagina principala"
-  description="Pagina principala a hackathonului organizat in Braila, Romania"
-  keywords={['hackathon', 'bts', 'brailatechsprint', 'braila', 'romania', 'it', 'tech', 'startup', 'hack', 'braila tech sprint', 'braila tech sprint 2021', 'braila tech sprint hackathon', 'braila', 'braila tech sprint hackathon 2021', 'hackathon braila', 'hackathon braila 2021', 'hackathon braila tech sprint', 'hackathon braila tech sprint 2021', 'hackathon braila tech sprint hackathon', 'hackathon', 'concurs braila', 'concurs programare braila', 'concurs programare', 'programare braila']}
-/>
+          title="Braila Tech Sprint - Pagina principala"
+          description="Pagina principala a hackathonului organizat in Braila, Romania"
+          keywords={[
+            "hackathon",
+            "bts",
+            "brailatechsprint",
+            "braila",
+            "romania",
+            "it",
+            "tech",
+            "startup",
+            "hack",
+            "braila tech sprint",
+            "braila tech sprint 2021",
+            "braila tech sprint hackathon",
+            "braila",
+            "braila tech sprint hackathon 2021",
+            "hackathon braila",
+            "hackathon braila 2021",
+            "hackathon braila tech sprint",
+            "hackathon braila tech sprint 2021",
+            "hackathon braila tech sprint hackathon",
+            "hackathon",
+            "concurs braila",
+            "concurs programare braila",
+            "concurs programare",
+            "programare braila",
+          ]}
+        />
       </Head>
       <Navbar></Navbar>
       <main>
@@ -51,17 +75,18 @@ export default function Home() {
             <span className="opacity-75 italic">— Echipa de organizare</span>
           </p>
         </section>
-        {<section
-                    className="mx-auto mb-16 w-full md:max-w-4xl px-4"
-                    data-aos="fade-down"
-                  >
-                    <h3 className="text-2xl font-medium text-sol-grey-accent">
-                      Categorii
-                    </h3>
-                    <div className="mt-1 mb-4 h-1 w-16 bg-sol-green"></div>
-                    <Categories />
-                  </section>
-          }
+        {
+          <section
+            className="mx-auto mb-10 w-full md:max-w-4xl px-4"
+            data-aos="fade-down"
+          >
+            <h3 className="text-2xl font-medium text-sol-grey-accent">
+              Categorii
+            </h3>
+            <div className="mt-1 mb-4 h-1 w-16 bg-sol-green"></div>
+            <Categories />
+          </section>
+        }
       </main>
       <Footer></Footer>
     </>
@@ -89,7 +114,7 @@ const Masthead = () => {
       </div>
 
       <button
-        className="uppercase font-medium tracking-wider py-2 px-6 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg  hover:shadow-lg hover:-translate-y-1 transition duration-200"
+        className="uppercase font-medium tracking-wider py-2 px-6 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg hover:shadow-lg hover:-translate-y-1 transition duration-200"
         onClick={() =>
           window.open("https://forms.gle/jjmE6cENHd9zA58V7", "_blank")
         }

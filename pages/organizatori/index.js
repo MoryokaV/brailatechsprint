@@ -8,7 +8,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NextSeo } from 'next-seo';
+import { NextSeo } from "next-seo";
 
 export default function Team() {
   const teamMembers = [
@@ -88,19 +88,66 @@ export default function Team() {
       <Head>
         <title>Organizatori</title>
         <NextSeo
-  title="Braila Tech Sprint - Organizatori"
-  description="Organizatorii hackathonului organizat in Braila, Romania"
-  keywords={['hackathon', 'bts', 'brailatechsprint', 'braila', 'romania', 'it', 'tech', 'startup', 'hack', 'braila tech sprint', 'braila tech sprint 2021', 'braila tech sprint hackathon', 'braila', 'braila tech sprint hackathon 2021', 'hackathon braila', 'hackathon braila 2021', 'hackathon braila tech sprint', 'hackathon braila tech sprint 2021', 'hackathon braila tech sprint hackathon', 'hackathon', 'organizatori hackathon', 'braila organizatori', 'hackathon braila organizatori', 'hackathon braila tech sprint organizatori', 'hackathon braila tech sprint hackathon organizatori', 'hackathon braila tech sprint hackathon 2021 organizatori', 'hackathon braila tech sprint 2021 organizatori', 'hackathon braila 2021 organizatori', 'hackathon braila tech sprint hackathon 2021 organizatori', 'razvan solea', 'solea', 'daniel marinescu', 'marinescu', 'marinescu daniel', 'ciuraru', 'bjpi hackathon', 'biblioteca judeteana hackathon', 'mario vlaviano', 'vlaviano mario', 'andrei iasar', 'iasar andrei', 'concurs braila', 'concurs programare braila', 'concurs programare', 'programare braila']}
-/>
+          title="Braila Tech Sprint - Organizatori"
+          description="Organizatorii hackathonului organizat in Braila, Romania"
+          keywords={[
+            "hackathon",
+            "bts",
+            "brailatechsprint",
+            "braila",
+            "romania",
+            "it",
+            "tech",
+            "startup",
+            "hack",
+            "braila tech sprint",
+            "braila tech sprint 2021",
+            "braila tech sprint hackathon",
+            "braila",
+            "braila tech sprint hackathon 2021",
+            "hackathon braila",
+            "hackathon braila 2021",
+            "hackathon braila tech sprint",
+            "hackathon braila tech sprint 2021",
+            "hackathon braila tech sprint hackathon",
+            "hackathon",
+            "organizatori hackathon",
+            "braila organizatori",
+            "hackathon braila organizatori",
+            "hackathon braila tech sprint organizatori",
+            "hackathon braila tech sprint hackathon organizatori",
+            "hackathon braila tech sprint hackathon 2021 organizatori",
+            "hackathon braila tech sprint 2021 organizatori",
+            "hackathon braila 2021 organizatori",
+            "hackathon braila tech sprint hackathon 2021 organizatori",
+            "razvan solea",
+            "solea",
+            "daniel marinescu",
+            "marinescu",
+            "marinescu daniel",
+            "ciuraru",
+            "bjpi hackathon",
+            "biblioteca judeteana hackathon",
+            "mario vlaviano",
+            "vlaviano mario",
+            "andrei iasar",
+            "iasar andrei",
+            "concurs braila",
+            "concurs programare braila",
+            "concurs programare",
+            "programare braila",
+          ]}
+        />
       </Head>
       <Navbar></Navbar>
       <section
         className="mx-auto mt-14 mb-10 w-full md:max-w-4xl px-4"
         data-aos="fade-down"
       >
-        <h1 className="mb-6 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
+        <h1 className="mb-2 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
           Cine suntem noi?
         </h1>
+        <div className="mx-auto mb-6 lg:mb-8 w-16 h-1 bg-sol-green"></div>
         <p className="tracking-wide text-center">
           Noi suntem echipa convinsă că Brăila trebuie să aibă propriul
           hackathon, că, pe lângă atâtea inițiative locale de robotică,
@@ -124,9 +171,10 @@ export default function Team() {
         className="mx-auto mb-20 w-full md:max-w-4xl px-4"
         data-aos="fade-down"
       >
-        <h1 className="mb-4 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
+        <h1 className="mb-2 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
           Juriul
         </h1>
+        <div className="mx-auto mb-6 lg:mb-8 w-16 h-1 bg-sol-green"></div>
         <p className="tracking-wide text-center mb-10">
           BTS este despre programare, excelență în educație, antreprenoriat si
           comunitate. De aceea i-am ales pe cei mai buni să aprecieze munca și
@@ -160,9 +208,10 @@ export default function Team() {
         className="mx-auto mb-20 w-full md:max-w-4xl px-4"
         data-aos="fade-down"
       >
-        <h1 className="mb-8 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
+        <h1 className="mb-4 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
           Echipa organizatoare
         </h1>
+        <div className="mx-auto mb-8 lg:mb-8 w-16 h-1 bg-sol-green"></div>
         <ul className="flex list-none mx-auto justify-center flex-wrap gap-10">
           {teamMembers.map((member, index) => (
             <li key={index} className="flex flex-col items-center">
@@ -203,10 +252,7 @@ export default function Team() {
         </ul>
       </section>
 
-      <section
-        className="mx-auto mb-10 w-full md:max-w-4xl px-4"
-        data-aos="fade-down"
-      >
+      <section className="mx-auto mb-10 w-full md:max-w-4xl px-4">
         <h1 className="mb-8 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
           Sponsori
         </h1>

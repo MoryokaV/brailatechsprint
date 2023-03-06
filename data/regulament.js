@@ -41,7 +41,7 @@ export const RegulamentDoc = [
     paragraphs: [
       `<strong className="text-lg">4.1 <span className="underline">Înscrierea și formarea echipelor</span></strong>
       <br></br>
-      Concurenții/echipele interesate se vor înscrie online prin intermediul formularului aflat la aceasta adresă: <a href="https://hackathon.bjbraila.ro/" className="text-sol-yellow underline hover:no-underline">https://hackathon.bjbraila.ro/</a>
+      Concurenții/echipele interesate se vor înscrie online prin intermediul formularului aflat la aceasta adresă: <a href="https://hackathon.bjbraila.ro/" className="text-sol-yellow underline hover:no-underline">https://hackathon.bjbraila.ro/</a> Etapa de înscriere online se finalizează <strong>duminică, 2 aprilie 2023.</strong>
       <br></br>
       Dupa înscrierea online, concurenții/echipele primesc un mail din partea organizatorilor care conține confirmarea înscrierii în hackathon. Înscrierea se consideră finalizată doar în momentul primirii acestui email de confirmare.`,
       `<strong className="text-lg">4.2 <span className="underline">Competiția propriu-zisă</span></strong>`,
@@ -69,7 +69,7 @@ export const RegulamentDoc = [
     ],
   },
   {
-    title: "Premiile competițieil",
+    title: "Premiile competițieii",
     paragraphs: [
       `<strong>5.1</strong> Premiile competiției vor fi asigurate prin bugetul Bibliotecii Județene ”Panait Istrati” Brăila și se vor acorda, conform legislației financiar-contabile în vigoare, concurenților/echipelor clasate pe primele trei locuri, conform punctajelor stabilite de juriul competiției in urma aplicării criteriilor de la punctul 6 al acestui regulament.`,
       `<strong>5.2</strong> Organizatorul competiției își rezervă dreptul de a nu acorda toate premiile dacă în urma evaluării realizate de către juriul competiției rezultă că nu sunt întrunite criteriile de calitate minimale de către un număr de cel puțin 3 echipe participante la competiție.`,

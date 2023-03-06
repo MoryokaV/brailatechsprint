@@ -81,7 +81,7 @@ export default function Home() {
             data-aos="fade-down"
           >
             <h3 className="text-2xl font-medium text-sol-grey-accent">
-              Categorii
+              Ce proiecte sunt eligibile?
             </h3>
             <div className="mt-1 mb-4 h-1 w-16 bg-sol-green"></div>
             <Categories />

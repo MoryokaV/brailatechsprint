@@ -24,7 +24,8 @@ export default function Team() {
     {
       name: "Mario Vlaviano",
       role: "Mobile & Web dev",
-      image: "https://i.imgur.com/iS27rva.jpg",
+      image:
+        "https://scontent.fclj1-2.fna.fbcdn.net/v/t39.30808-6/316830997_1321260891994877_8570911359093303250_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHgL179u2ZLe_jfMk-CCLAsG4vm2IFNoIUbi-bYgU2ghWU5vT-I7D5YctEENM0q4SqPPF7l-PFb1HRijGISdgF0&_nc_ohc=9wGu9o9BurMAX9-5Fi4&_nc_ht=scontent.fclj1-2.fna&oh=00_AfD6rBW2GcCbXdfzBCRxT4H8Jk3BtxJOjSyoSrNwSpDiVw&oe=6405D263",
       social: {
         instagram: "https://www.instagram.com/mario.vlv/",
         github: "https://github.com/moryokav",
@@ -78,8 +79,7 @@ export default function Team() {
     {
       name: "Mario Vlaviano",
       role: "Middle Flutter Developer - Elev",
-      image:
-        "https://scontent.fclj1-2.fna.fbcdn.net/v/t39.30808-6/316830997_1321260891994877_8570911359093303250_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHgL179u2ZLe_jfMk-CCLAsG4vm2IFNoIUbi-bYgU2ghWU5vT-I7D5YctEENM0q4SqPPF7l-PFb1HRijGISdgF0&_nc_ohc=9wGu9o9BurMAX9-5Fi4&_nc_ht=scontent.fclj1-2.fna&oh=00_AfD6rBW2GcCbXdfzBCRxT4H8Jk3BtxJOjSyoSrNwSpDiVw&oe=6405D263",
+      image: "https://i.imgur.com/iS27rva.jpg",
     },
   ];
 
@@ -141,7 +141,7 @@ export default function Team() {
       </Head>
       <Navbar></Navbar>
       <section
-        className="mx-auto mt-14 mb-10 w-full md:max-w-4xl px-4"
+        className="mx-auto mt-14 mb-20 w-full md:max-w-4xl px-4"
         data-aos="fade-down"
       >
         <h1 className="mb-2 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
@@ -165,6 +165,27 @@ export default function Team() {
           email. Fiecare mână întinsă este de ajutor, evenimentul BTS va deveni
           mai bun și vom aprecia acest lucru.
         </p>
+        <br></br>
+        <p className="flex justify-center font-semibold italic mb-4 text-sol-grey-accent">
+          Mulțumim sponsorilor noștri
+        </p>
+        <div className="flex mx-auto justify-center flex-wrap max-w-4xl gap-x-6 gap-y-3">
+          <Image
+            className="h-auto"
+            src="http://www.ime.ro/templates/rt_camber/images/logo/dark/logo.png"
+            width="120"
+            height="0"
+            alt="IME Romania logo"
+          />
+          <Image
+            className="h-auto"
+            src="https://i.imgur.com/xKeCwb3.png"
+            width="260"
+            height="0"
+            alt="Pacronex Braila"
+            unoptimized
+          />
+        </div>
       </section>
 
       <section
@@ -205,10 +226,10 @@ export default function Team() {
       </section>
 
       <section
-        className="mx-auto mb-20 w-full md:max-w-4xl px-4"
+        className="mx-auto mb-10 w-full md:max-w-4xl px-4"
         data-aos="fade-down"
       >
-        <h1 className="mb-4 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
+        <h1 className="mb-3 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
           Echipa organizatoare
         </h1>
         <div className="mx-auto mb-8 lg:mb-8 w-16 h-1 bg-sol-green"></div>
@@ -250,27 +271,6 @@ export default function Team() {
             </li>
           ))}
         </ul>
-      </section>
-
-      <section className="mx-auto mb-10 w-full md:max-w-4xl px-4">
-        <h1 className="mb-8 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
-          Sponsori
-        </h1>
-        <div className="flex mx-auto justify-center flex-wrap max-w-4xl gap-10">
-          <Image
-            src="http://www.ime.ro/templates/rt_camber/images/logo/dark/logo.png"
-            width="150"
-            height="150"
-            alt="IME Romania logo"
-          />
-          <Image
-            className="w-auto"
-            src="https://media.cylex.ro/companies/1110/99/logo/logo.jpg"
-            width="0"
-            height="150"
-            alt="IME Romania logo"
-          />
-        </div>
       </section>
 
       <Footer></Footer>

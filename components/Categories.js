@@ -39,7 +39,7 @@ const Categories = () => {
       color: "bg-sol-yellow",
       icon: faCode,
       description:
-        "Dacă îți place să creezi site-uri sau aplicații web ușor de folosit în browser, atunci secțiunea Web este pentru tine!",
+        "Dacă îți place să creezi site-uri sau aplicații web ușor de folosit în browser, atunci îți sugerăm să propui o soluție Web!",
     },
   ];
 

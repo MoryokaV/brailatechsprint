@@ -24,8 +24,7 @@ export default function Team() {
     {
       name: "Mario Vlaviano",
       role: "Mobile & Web dev",
-      image:
-        "https://scontent.fclj1-2.fna.fbcdn.net/v/t39.30808-6/316830997_1321260891994877_8570911359093303250_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHgL179u2ZLe_jfMk-CCLAsG4vm2IFNoIUbi-bYgU2ghWU5vT-I7D5YctEENM0q4SqPPF7l-PFb1HRijGISdgF0&_nc_ohc=9wGu9o9BurMAX9-5Fi4&_nc_ht=scontent.fclj1-2.fna&oh=00_AfD6rBW2GcCbXdfzBCRxT4H8Jk3BtxJOjSyoSrNwSpDiVw&oe=6405D263",
+      image: "https://i.imgur.com/iZjS0jI.jpeg",
       social: {
         instagram: "https://www.instagram.com/mario.vlv/",
         github: "https://github.com/moryokav",
@@ -59,7 +58,7 @@ export default function Team() {
         "https://media.licdn.com/dms/image/C4E03AQGjdVSQ5wx8pw/profile-displayphoto-shrink_800_800/0/1544066474498?e=2147483647&v=beta&t=AAMyfB1_ajTRbBJT-esACw6FAIh7xudq-buBuZiXAVo",
     },
     {
-      name: "dr. Răzvan Șolea",
+      name: "conf. dr. Răzvan Șolea",
       role: "prodecan UGAL AC @ Galați",
       image:
         "https://i1.rgstatic.net/ii/profile.image/272667056013313-1442020300098_Q512/R-Solea.jpg",

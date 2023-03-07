@@ -42,7 +42,7 @@ export default function Team() {
     },
     {
       name: "Ștefan Ghețu",
-      role: "Junior dev",
+      role: "Marketing",
       image: "https://i.imgur.com/GHYpNFG.jpeg",
       social: {
         instagram: "https://www.instagram.com/1grizz5/",

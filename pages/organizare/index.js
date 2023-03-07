@@ -66,8 +66,7 @@ export default function Team() {
     {
       name: "Daniel Marinescu",
       role: "fondator IME România",
-      image:
-        "https://scontent.fclj1-2.fna.fbcdn.net/v/t31.18172-8/21950654_10155002333729677_8753207459080497097_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF7lvB6Km6sBTvD43VeNGNkK6T8TwiRHvwrpPxPCJEe_KGgnbCnt8I7qot-JvIElq-wNyReZB8sQy_ildyqCZUR&_nc_ohc=Ww1dwmg_5Y0AX-dOCJP&_nc_ht=scontent.fclj1-2.fna&oh=00_AfD8b9C0xIf9ZpEXlHiQGZ02ItsuflSndavxyXY4qcmwyw&oe=6429D7B2",
+      image: "/daniel marinescu.jpeg",
     },
     {
       name: "Teodor Claudiu Ciuraru",

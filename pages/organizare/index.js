@@ -86,9 +86,9 @@ export default function Team() {
   return (
     <>
       <Head>
-        <title>Organizatori</title>
+        <title>BTS - Organizare</title>
         <NextSeo
-          title="Braila Tech Sprint - Organizatori"
+          title="Braila Tech Sprint - Organizare"
           description="Organizatorii hackathonului organizat in Braila, Romania"
           keywords={[
             "hackathon",

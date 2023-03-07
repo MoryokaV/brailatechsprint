@@ -14,7 +14,7 @@ export default function Regulament() {
   return (
     <>
       <Head>
-        <title>Brăila Tech Sprint</title>
+        <title>BTS - Regulament</title>
         <meta name="description" content="Brăila IT hackathon landing page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

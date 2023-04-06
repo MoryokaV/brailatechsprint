@@ -15,8 +15,7 @@ export default function Team() {
     {
       name: "Corina Ciuraru",
       role: "Șef serviciu Biblioteca Județeană Brăila",
-      image:
-        "https://scontent.fotp3-3.fna.fbcdn.net/v/t1.6435-9/45400885_2361450630549454_5961475363455369216_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGJwtcs_FSZ31XebU5Vi-pWCYWwB2CIuq4JhbAHYIi6rh_OUg2YCj_DlHKePA9kys77D9s8M-XmPU6JLGNpMelz&_nc_ohc=KzgRpDqeRIUAX9C6cWl&_nc_ht=scontent.fotp3-3.fna&oh=00_AfAb4Yx04lWGDVnLXSEheODOX5aqnJNTKd7-8FBtAMTPdw&oe=64253184",
+      image: "/corina ciuraru.jpg",
       social: {
         github: "https://www.facebook.com/corina.ciuraru",
       },
@@ -24,7 +23,7 @@ export default function Team() {
     {
       name: "Mario Vlaviano",
       role: "Mobile & Web dev",
-      image: "https://i.imgur.com/iZjS0jI.jpeg",
+      image: "/mario vlaviano 2.webp",
       social: {
         instagram: "https://www.instagram.com/mario.vlv/",
         github: "https://github.com/moryokav",
@@ -33,7 +32,7 @@ export default function Team() {
     {
       name: "Andrei Iașar",
       role: "Backend dev",
-      image: "https://i.imgur.com/GfcnEd8.jpg",
+      image: "/andrei iasar.jpeg",
       social: {
         instagram: "https://www.instagram.com/andrei.isr/",
         github: "https://github.com/andreiusq",
@@ -42,7 +41,7 @@ export default function Team() {
     {
       name: "Ștefan Ghețu",
       role: "Marketing",
-      image: "https://i.imgur.com/GHYpNFG.jpeg",
+      image: "/stefan ghetu.jpeg",
       social: {
         instagram: "https://www.instagram.com/1grizz5/",
         github: "https://github.com/ursus161",
@@ -54,14 +53,12 @@ export default function Team() {
     {
       name: "Prof. Aurelia Ion",
       role: "Inspector şcolar informatică",
-      image:
-        "https://media.licdn.com/dms/image/C4E03AQGjdVSQ5wx8pw/profile-displayphoto-shrink_800_800/0/1544066474498?e=2147483647&v=beta&t=AAMyfB1_ajTRbBJT-esACw6FAIh7xudq-buBuZiXAVo",
+      image: "/aura ion.jpg",
     },
     {
       name: "conf. dr. Răzvan Șolea",
       role: "prodecan UGAL AC @ Galați",
-      image:
-        "https://i1.rgstatic.net/ii/profile.image/272667056013313-1442020300098_Q512/R-Solea.jpg",
+      image: "/razvan solea.jpg",
     },
     {
       name: "Daniel Marinescu",
@@ -71,13 +68,12 @@ export default function Team() {
     {
       name: "Teodor Claudiu Ciuraru",
       role: "Senior React Native Developer",
-      image:
-        "https://scontent.fclj1-2.fna.fbcdn.net/v/t1.6435-9/60069044_2730334753648400_7028177963690491904_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGbrJxMkx9nT1nZDqBdhvBsdqQI26nQ9212pAjbqdD3bSxskR9dX7tIiMKQ-SlSJnIR3Efs6XYr45omwASJau0L&_nc_ohc=J49rZ7ur5ekAX8FTtBF&_nc_ht=scontent.fclj1-2.fna&oh=00_AfBNeMNqdrKcMgdkqxValgrdGHdWiTYMW_1ehvXL7f2QfQ&oe=64285B3D",
+      image: "/teodor ciuraru.jpg",
     },
     {
       name: "Mario Vlaviano",
       role: "Middle Flutter Developer - Elev",
-      image: "https://i.imgur.com/iS27rva.jpg",
+      image: "/mario vlaviano 1.jpeg",
     },
   ];
 

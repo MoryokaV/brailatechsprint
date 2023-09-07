@@ -14,7 +14,7 @@ export default function Regulament() {
   return (
     <>
       <Head>
-        <title>BTS - Regulament</title>
+        <title>Braila Tech Sprint - Regulament</title>
         <meta name="description" content="Brăila IT hackathon landing page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -23,7 +23,6 @@ export default function Regulament() {
           description="Regulamentul hackathonului organizat in Braila, Romania"
           keywords={[
             "hackathon",
-            "bts",
             "brailatechsprint",
             "braila",
             "romania",
@@ -42,7 +41,7 @@ export default function Regulament() {
             "hackathon braila tech sprint 2021",
             "hackathon braila tech sprint hackathon",
             "hackathon",
-            "regulament bts",
+            "regulament braila tech sprint",
             "regulament hackathon",
             "braila tech sprint regulament",
             "tech sprint braiila regulament",

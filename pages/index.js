@@ -19,7 +19,6 @@ export default function Home() {
           description="Pagina principala a hackathonului organizat in Braila, Romania"
           keywords={[
             "hackathon",
-            "bts",
             "brailatechsprint",
             "braila",
             "romania",
@@ -57,7 +56,7 @@ export default function Home() {
           </h3>
           <div className="mt-1 mb-4 h-1 w-16 bg-sol-green"></div>
           <p className="tracking-wide">
-            BTS este o ușă deschisă către viitor, o modalitate de a-ți testa
+            Braila Tech Sprint este o ușă deschisă către viitor, o modalitate de a-ți testa
             limitele, cunoștințele, de a înțelege mai bine ce vrei să devii.
             Alege să ieși din zona de confort, pentru a evolua! Mintea va lucra
             în condiții de competiție, vei dori să faci parte dintr-o echipă

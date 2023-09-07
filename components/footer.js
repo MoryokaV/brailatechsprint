@@ -18,7 +18,7 @@ const Footer = () => {
         </section>
         <section>
           <p className="brightness-75 text-sm">
-            Copyright @ {new Date().getFullYear()} BTS
+            Copyright @ {new Date().getFullYear()} Braila Tech Sprint
           </p>
         </section>
         <section>

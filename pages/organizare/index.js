@@ -80,13 +80,12 @@ export default function Team() {
   return (
     <>
       <Head>
-        <title>BTS - Organizare</title>
+        <title>Braila Tech Sprint - Organizare</title>
         <NextSeo
           title="Braila Tech Sprint - Organizare"
           description="Organizatorii hackathonului organizat in Braila, Romania"
           keywords={[
             "hackathon",
-            "bts",
             "brailatechsprint",
             "braila",
             "romania",
@@ -156,7 +155,7 @@ export default function Team() {
           Brăila, Inspectoratul Școlar Județean, dar și diverși sponsori.
           Oricine dorește să susțină performanța tinerilor programatori
           brăileni, este invitat să ni se alăture contactându-ne la adresa de
-          email. Fiecare mână întinsă este de ajutor, evenimentul BTS va deveni
+          email. Fiecare mână întinsă este de ajutor, evenimentul Braila Tech Sprint va deveni
           mai bun și vom aprecia acest lucru.
         </p>
         <br></br>
@@ -191,7 +190,7 @@ export default function Team() {
         </h1>
         <div className="mx-auto mb-6 lg:mb-8 w-16 h-1 bg-sol-green"></div>
         <p className="tracking-wide text-center mb-10">
-          BTS este despre programare, excelență în educație, antreprenoriat si
+          Braila Tech Sprint este despre programare, excelență în educație, antreprenoriat si
           comunitate. De aceea i-am ales pe cei mai buni să aprecieze munca și
           ideile pe care tu și echipa ta le veți aduce în competiție. Profesori,
           programatori, antreprenori sunt aici să înveți de la ei și să te

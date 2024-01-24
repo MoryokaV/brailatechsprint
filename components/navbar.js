@@ -23,6 +23,10 @@ const Navbar = () => {
             Regulament
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-sol-green"></span>
           </Link>
+          <Link href="/galerie" className="group">
+            Galerie
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-sol-green"></span>
+          </Link>
           <Link href="/organizare" className="group">
             Organizare
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-sol-green"></span>
@@ -51,6 +55,10 @@ const Navbar = () => {
           </Link>
           <Link href="/regulament" className="group">
             Regulament
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-sol-green"></span>
+          </Link>
+          <Link href="/galerie" className="group">
+            Galerie
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-sol-green"></span>
           </Link>
           <Link href="/organizare" className="group">

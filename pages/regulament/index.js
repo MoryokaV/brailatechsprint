@@ -2,7 +2,6 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { faBook, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Head from "next/head";
 import htmlParser from "html-react-parser";
 import { RegulamentDoc } from "data/regulament";
 import { useState } from "react";
@@ -13,54 +12,48 @@ export default function Regulament() {
 
   return (
     <>
-      <Head>
-        <title>Braila Tech Sprint - Regulament</title>
-        <meta name="description" content="Brăila IT hackathon landing page" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-        <NextSeo
-          title="Braila Tech Sprint - Regulament"
-          description="Regulamentul hackathonului organizat in Braila, Romania"
-          keywords={[
-            "hackathon",
-            "brailatechsprint",
-            "braila",
-            "romania",
-            "it",
-            "tech",
-            "startup",
-            "hack",
-            "braila tech sprint",
-            "braila tech sprint 2021",
-            "braila tech sprint hackathon",
-            "braila",
-            "braila tech sprint hackathon 2021",
-            "hackathon braila",
-            "hackathon braila 2021",
-            "hackathon braila tech sprint",
-            "hackathon braila tech sprint 2021",
-            "hackathon braila tech sprint hackathon",
-            "hackathon",
-            "regulament braila tech sprint",
-            "regulament hackathon",
-            "braila tech sprint regulament",
-            "tech sprint braiila regulament",
-            "reguli hackathon braila",
-            "reguli hackathon braila tech sprint",
-            "reguli hackathon braila tech sprint 2021",
-            "reguli hackathon braila tech sprint hackathon",
-            "reguli hackathon braila tech sprint hackathon 2021",
-            "reguli hackathon braila tech sprint hackathon 2021",
-            "hackathon braila regulament",
-            "hackathon braila regulament 2021",
-            "hackathon braila regulament",
-            "concurs braila",
-            "concurs programare braila",
-            "concurs programare",
-            "programare braila",
-          ]}
-        />
-      </Head>
+      <NextSeo
+        title="Braila Tech Sprint - Regulament"
+        description="Regulamentul hackathonului organizat in Braila, Romania"
+        keywords={[
+          "hackathon",
+          "brailatechsprint",
+          "braila",
+          "romania",
+          "it",
+          "tech",
+          "startup",
+          "hack",
+          "braila tech sprint",
+          "braila tech sprint 2021",
+          "braila tech sprint hackathon",
+          "braila",
+          "braila tech sprint hackathon 2021",
+          "hackathon braila",
+          "hackathon braila 2021",
+          "hackathon braila tech sprint",
+          "hackathon braila tech sprint 2021",
+          "hackathon braila tech sprint hackathon",
+          "hackathon",
+          "regulament braila tech sprint",
+          "regulament hackathon",
+          "braila tech sprint regulament",
+          "tech sprint braiila regulament",
+          "reguli hackathon braila",
+          "reguli hackathon braila tech sprint",
+          "reguli hackathon braila tech sprint 2021",
+          "reguli hackathon braila tech sprint hackathon",
+          "reguli hackathon braila tech sprint hackathon 2021",
+          "reguli hackathon braila tech sprint hackathon 2021",
+          "hackathon braila regulament",
+          "hackathon braila regulament 2021",
+          "hackathon braila regulament",
+          "concurs braila",
+          "concurs programare braila",
+          "concurs programare",
+          "programare braila",
+        ]}
+      />
       <Navbar></Navbar>
       <div
         className="mt-10 mb-2 flex flex-col jusify-center items-center gap-4"
@@ -102,7 +95,7 @@ export default function Regulament() {
             {RegulamentDoc[currentIndex].title}
           </h3>
           <p className="py-1 px-4 bg-sol-dark-blue/50 text-sol-grey/75 font-bold uppercase w-min whitespace-nowrap rounded-sm mb-3 tracking-wider">
-            Ediția I
+            Ediția II
           </p>
 
           {RegulamentDoc[currentIndex].paragraphs.map((content, index) => {

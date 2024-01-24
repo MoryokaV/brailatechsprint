@@ -1,49 +1,41 @@
-import Head from "next/head";
 import Navbar from "components/navbar";
 import Footer from "@/components/footer";
 import Terminal from "@/components/terminal";
-import Image from "next/image";
 import Categories from "@/components/categories";
 import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Brăila Tech Sprint</title>
-        <meta name="description" content="Brăila IT hackathon landing page" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-        <NextSeo
-          title="Braila Tech Sprint - Pagina principala"
-          description="Pagina principala a hackathonului organizat in Braila, Romania"
-          keywords={[
-            "hackathon",
-            "brailatechsprint",
-            "braila",
-            "romania",
-            "it",
-            "tech",
-            "startup",
-            "hack",
-            "braila tech sprint",
-            "braila tech sprint 2021",
-            "braila tech sprint hackathon",
-            "braila",
-            "braila tech sprint hackathon 2021",
-            "hackathon braila",
-            "hackathon braila 2021",
-            "hackathon braila tech sprint",
-            "hackathon braila tech sprint 2021",
-            "hackathon braila tech sprint hackathon",
-            "hackathon",
-            "concurs braila",
-            "concurs programare braila",
-            "concurs programare",
-            "programare braila",
-          ]}
-        />
-      </Head>
+      <NextSeo
+        title="Braila Tech Sprint - Pagina principala"
+        description="Pagina principala a hackathonului organizat in Braila, Romania"
+        keywords={[
+          "hackathon",
+          "brailatechsprint",
+          "braila",
+          "romania",
+          "it",
+          "tech",
+          "startup",
+          "hack",
+          "braila tech sprint",
+          "braila tech sprint 2021",
+          "braila tech sprint hackathon",
+          "braila",
+          "braila tech sprint hackathon 2021",
+          "hackathon braila",
+          "hackathon braila 2021",
+          "hackathon braila tech sprint",
+          "hackathon braila tech sprint 2021",
+          "hackathon braila tech sprint hackathon",
+          "hackathon",
+          "concurs braila",
+          "concurs programare braila",
+          "concurs programare",
+          "programare braila",
+        ]}
+      />
       <Navbar></Navbar>
       <main>
         <Masthead></Masthead>
@@ -56,19 +48,20 @@ export default function Home() {
           </h3>
           <div className="mt-1 mb-4 h-1 w-16 bg-sol-green"></div>
           <p className="tracking-wide">
-            Braila Tech Sprint este o ușă deschisă către viitor, o modalitate de a-ți testa
-            limitele, cunoștințele, de a înțelege mai bine ce vrei să devii.
-            Alege să ieși din zona de confort, pentru a evolua! Mintea va lucra
-            în condiții de competiție, vei dori să faci parte dintr-o echipă
-            puternică sau, poate, vei concura singur, dar, la final, trebuie să
-            convingi juriul că soluția ta informatică este cea mai smart dintre
-            toate. Întâlnirea cu performanța brăileană în informatică și
-            tehnologiile viitorul este la Biblioteca Județeană ”Panait Istrati”!
-            Lasă consola să se odihnească acasă și vino să ne arăți că ai cea
-            mai tare idee de proiect, numai bună de a deveni, mai târziu,
-            propriul tău startup. Cu echipă sau fără, în 24 de ore, trebuie să
-            ne convingi că poți, iar noi vom premia cele mai bune inițiative. Va
-            fi greu, dar va fi frumos! Citește regulamentul și apoi înscrie-te!
+            Braila Tech Sprint este o ușă deschisă către viitor, o modalitate de
+            a-ți testa limitele, cunoștințele, de a înțelege mai bine ce vrei să
+            devii. Alege să ieși din zona de confort, pentru a evolua! Mintea va
+            lucra în condiții de competiție, vei dori să faci parte dintr-o
+            echipă puternică sau, poate, vei concura singur, dar, la final,
+            trebuie să convingi juriul că soluția ta informatică este cea mai
+            smart dintre toate. Întâlnirea cu performanța brăileană în
+            informatică și tehnologiile viitorul este la Biblioteca Județeană
+            ”Panait Istrati”! Lasă consola să se odihnească acasă și vino să ne
+            arăți că ai cea mai tare idee de proiect, numai bună de a deveni,
+            mai târziu, propriul tău startup. Cu echipă sau fără, în 24 de ore,
+            trebuie să ne convingi că poți, iar noi vom premia cele mai bune
+            inițiative. Va fi greu, dar va fi frumos! Citește regulamentul și
+            apoi înscrie-te!
             <br></br>
             <br></br>
             <span className="opacity-75 italic">— Echipa de organizare</span>

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Navbar from "components/navbar";
 import Footer from "@/components/footer";
 import Image from "next/image";
@@ -79,59 +78,56 @@ export default function Team() {
 
   return (
     <>
-      <Head>
-        <title>Braila Tech Sprint - Organizare</title>
-        <NextSeo
-          title="Braila Tech Sprint - Organizare"
-          description="Organizatorii hackathonului organizat in Braila, Romania"
-          keywords={[
-            "hackathon",
-            "brailatechsprint",
-            "braila",
-            "romania",
-            "it",
-            "tech",
-            "startup",
-            "hack",
-            "braila tech sprint",
-            "braila tech sprint 2021",
-            "braila tech sprint hackathon",
-            "braila",
-            "braila tech sprint hackathon 2021",
-            "hackathon braila",
-            "hackathon braila 2021",
-            "hackathon braila tech sprint",
-            "hackathon braila tech sprint 2021",
-            "hackathon braila tech sprint hackathon",
-            "hackathon",
-            "organizatori hackathon",
-            "braila organizatori",
-            "hackathon braila organizatori",
-            "hackathon braila tech sprint organizatori",
-            "hackathon braila tech sprint hackathon organizatori",
-            "hackathon braila tech sprint hackathon 2021 organizatori",
-            "hackathon braila tech sprint 2021 organizatori",
-            "hackathon braila 2021 organizatori",
-            "hackathon braila tech sprint hackathon 2021 organizatori",
-            "razvan solea",
-            "solea",
-            "daniel marinescu",
-            "marinescu",
-            "marinescu daniel",
-            "ciuraru",
-            "bjpi hackathon",
-            "biblioteca judeteana hackathon",
-            "mario vlaviano",
-            "vlaviano mario",
-            "andrei iasar",
-            "iasar andrei",
-            "concurs braila",
-            "concurs programare braila",
-            "concurs programare",
-            "programare braila",
-          ]}
-        />
-      </Head>
+      <NextSeo
+        title="Braila Tech Sprint - Organizare"
+        description="Organizatorii hackathonului organizat in Braila, Romania"
+        keywords={[
+          "hackathon",
+          "brailatechsprint",
+          "braila",
+          "romania",
+          "it",
+          "tech",
+          "startup",
+          "hack",
+          "braila tech sprint",
+          "braila tech sprint 2021",
+          "braila tech sprint hackathon",
+          "braila",
+          "braila tech sprint hackathon 2021",
+          "hackathon braila",
+          "hackathon braila 2021",
+          "hackathon braila tech sprint",
+          "hackathon braila tech sprint 2021",
+          "hackathon braila tech sprint hackathon",
+          "hackathon",
+          "organizatori hackathon",
+          "braila organizatori",
+          "hackathon braila organizatori",
+          "hackathon braila tech sprint organizatori",
+          "hackathon braila tech sprint hackathon organizatori",
+          "hackathon braila tech sprint hackathon 2021 organizatori",
+          "hackathon braila tech sprint 2021 organizatori",
+          "hackathon braila 2021 organizatori",
+          "hackathon braila tech sprint hackathon 2021 organizatori",
+          "razvan solea",
+          "solea",
+          "daniel marinescu",
+          "marinescu",
+          "marinescu daniel",
+          "ciuraru",
+          "bjpi hackathon",
+          "biblioteca judeteana hackathon",
+          "mario vlaviano",
+          "vlaviano mario",
+          "andrei iasar",
+          "iasar andrei",
+          "concurs braila",
+          "concurs programare braila",
+          "concurs programare",
+          "programare braila",
+        ]}
+      />
       <Navbar></Navbar>
       <section
         className="mx-auto mt-14 mb-20 w-full md:max-w-4xl px-4"
@@ -155,8 +151,8 @@ export default function Team() {
           Brăila, Inspectoratul Școlar Județean, dar și diverși sponsori.
           Oricine dorește să susțină performanța tinerilor programatori
           brăileni, este invitat să ni se alăture contactându-ne la adresa de
-          email. Fiecare mână întinsă este de ajutor, evenimentul Braila Tech Sprint va deveni
-          mai bun și vom aprecia acest lucru.
+          email. Fiecare mână întinsă este de ajutor, evenimentul Braila Tech
+          Sprint va deveni mai bun și vom aprecia acest lucru.
         </p>
         <br></br>
         <p className="flex justify-center font-semibold italic mb-4 text-sol-grey-accent">
@@ -190,11 +186,11 @@ export default function Team() {
         </h1>
         <div className="mx-auto mb-6 lg:mb-8 w-16 h-1 bg-sol-green"></div>
         <p className="tracking-wide text-center mb-10">
-          Braila Tech Sprint este despre programare, excelență în educație, antreprenoriat si
-          comunitate. De aceea i-am ales pe cei mai buni să aprecieze munca și
-          ideile pe care tu și echipa ta le veți aduce în competiție. Profesori,
-          programatori, antreprenori sunt aici să înveți de la ei și să te
-          inspire. Succes tuturor!
+          Braila Tech Sprint este despre programare, excelență în educație,
+          antreprenoriat si comunitate. De aceea i-am ales pe cei mai buni să
+          aprecieze munca și ideile pe care tu și echipa ta le veți aduce în
+          competiție. Profesori, programatori, antreprenori sunt aici să înveți
+          de la ei și să te inspire. Succes tuturor!
         </p>
         <ul className="flex list-none mx-auto justify-center flex-wrap max-w-4xl gap-10">
           {judges.map((member, index) => (

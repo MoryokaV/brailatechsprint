@@ -164,20 +164,20 @@ const CTA = () => {
         <Link
           href="https://www.instagram.com/brailatechsprint2024/"
           target="_blank"
-          className="flex gap-2 items-center justify-center border-r border-r-sol-grey/50 w-1/3"
+          className="transition-all hover:brightness-125 flex gap-2 items-center justify-center border-r border-r-sol-grey/50 w-1/3"
         >
           <FaInstagram className="text-sol-magenta h-9 w-9" /> Instagram
         </Link>
         <Link
           href="https://www.facebook.com/HackBTS"
           target="_blank"
-          className="flex gap-2 items-center justify-center border-r border-r-sol-grey/50 w-1/3"
+          className="transition-all hover:brightness-125 flex gap-2 items-center justify-center border-r border-r-sol-grey/50 w-1/3"
         >
           <FaFacebook className="text-sol-bright-blue h-9 w-9" /> Facebook
         </Link>
         <Link
           href="mailto:hackathon@bjbraila.ro"
-          className="flex gap-2 items-center justify-center w-1/3"
+          className="transition-all hover:brightness-125 flex gap-2 items-center justify-center w-1/3"
         >
           <FaEnvelope className="text-sol-green h-9 w-9" /> E-Mail
         </Link>

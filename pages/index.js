@@ -4,11 +4,13 @@ import Terminal from "@/components/terminal";
 import Categories from "@/components/categories";
 import { NextSeo } from "next-seo";
 import Image from "next/image";
+import Link from "next/link";
+import IndexPartnersFlex from "@/components/partners";
+import { FaEnvelope, FaFacebook, FaInstagram } from "react-icons/fa";
 
 import logo from "public/bts.png";
 import wave1 from "public/wave1.svg";
 import wave2 from "public/wave2.svg";
-import IndexPartnersFlex from "@/components/partners";
 
 export default function Home() {
   return (
@@ -77,19 +79,45 @@ export default function Home() {
             </span>
           </p>
         </section>
-        {
-          <section
-            className="mx-auto mb-10 w-full md:max-w-4xl px-4"
-            data-aos="fade-down"
-            data-aos-delay="300"
-          >
-            <h3 className="text-2xl font-medium text-sol-grey-accent">
-              Ce proiecte sunt eligibile?
-            </h3>
-            <div className="mt-1 mb-4 h-1 w-16 bg-sol-yellow"></div>
-            <Categories />
-          </section>
-        }
+        <section
+          className="mx-auto mb-16 w-full md:max-w-4xl px-4"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
+          <h3 className="text-2xl font-medium text-sol-grey-accent">
+            Ce proiecte sunt eligibile?
+          </h3>
+          <div className="mt-1 mb-4 h-1 w-16 bg-sol-yellow"></div>
+          <Categories />
+        </section>
+        <section className="mx-auto mb-10 w-full md:max-w-4xl px-4">
+          <h3 className="text-center mb-6 font-medium text-2xl">
+            Ne poți contacta oricând pe{" "}
+            <span className="text-sol-yellow">rețelele sociale</span>
+          </h3>
+          <div className="border border-sol-grey-dark/50 flex px-8 py-6 rounded-lg font-medium text-2xl">
+            <Link
+              href="https://www.instagram.com/brailatechsprint2024/"
+              target="_blank"
+              className="flex gap-2 items-center justify-center border-r border-r-sol-grey/50 w-1/3"
+            >
+              <FaInstagram className="text-sol-magenta h-9 w-9" /> Instagram
+            </Link>
+            <Link
+              href="https://www.facebook.com/HackBTS"
+              target="_blank"
+              className="flex gap-2 items-center justify-center border-r border-r-sol-grey/50 w-1/3"
+            >
+              <FaFacebook className="text-sol-bright-blue h-9 w-9" /> Facebook
+            </Link>
+            <Link
+              href="mailto:hackathon@bjbraila.ro"
+              className="flex gap-2 items-center justify-center w-1/3"
+            >
+              <FaEnvelope className="text-sol-green h-9 w-9" /> E-Mail
+            </Link>
+          </div>
+        </section>
       </main>
       <Footer></Footer>
     </>

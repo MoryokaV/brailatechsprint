@@ -9,6 +9,7 @@ import apan from "public/partners/apan.png";
 import isj from "public/partners/isj.png";
 import eprodesign from "public/partners/eprodesign.png";
 import alma from "public/partners/alma.png";
+import cje from "public/partners/cje.png";
 
 export const partners = [
   {
@@ -26,6 +27,10 @@ export const partners = [
   {
     img: cj,
     name: "Consiliul Judetean Braila",
+  },
+  {
+    img: cje,
+    name: "Consiliul Judetean al elevilor",
   },
   {
     img: isj,

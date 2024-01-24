@@ -18,6 +18,7 @@ module.exports = {
         "sol-green": "#859900",
         "sol-brred": "#cb4b16",
         "sol-bright-blue": "#268bd2",
+        "sol-magenta": "#D33682",
       },
     },
   },

@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const IndexPartnersFlex = () => {
   return (
-    <section className="mx-auto mb-16 w-full md:max-w-6xl px-4 text-center text-xl text-sol-grey-dark">
+    <section
+      data-aos="fade-down"
+      className="mx-auto mb-16 w-full md:max-w-6xl px-4 text-center text-xl text-sol-grey-dark"
+    >
       <h2 className="uppercase tracking-widest font-medium mb-6">Oferit de</h2>
       <div className="flex flex-row flex-wrap items-center justify-center gap-x-6 gap-y-4">
         {partners.map((partner, index) => {

@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import Terminal from "@/components/terminal";
 import Categories from "@/components/categories";
 import { NextSeo } from "next-seo";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -46,7 +47,7 @@ export default function Home() {
           <h3 className="text-2xl font-medium text-sol-grey-accent">
             Ce este Brăila Tech Sprint?
           </h3>
-          <div className="mt-1 mb-4 h-1 w-16 bg-sol-green"></div>
+          <div className="mt-1 mb-4 h-1 w-16 bg-sol-yellow"></div>
           <p className="tracking-wide">
             Braila Tech Sprint este o ușă deschisă către viitor, o modalitate de
             a-ți testa limitele, cunoștințele, de a înțelege mai bine ce vrei să
@@ -75,7 +76,7 @@ export default function Home() {
             <h3 className="text-2xl font-medium text-sol-grey-accent">
               Ce proiecte sunt eligibile?
             </h3>
-            <div className="mt-1 mb-4 h-1 w-16 bg-sol-green"></div>
+            <div className="mt-1 mb-4 h-1 w-16 bg-sol-yellow"></div>
             <Categories />
           </section>
         }
@@ -85,31 +86,36 @@ export default function Home() {
   );
 }
 
+import logo from "public/bts.png";
+
 const Masthead = () => {
   return (
     <div
       data-aos="zoom-in"
       className="min-h-screen flex flex-col items-center justify-center p-8 mb-8"
     >
-      <div className="max-w-6xl flex flex-col lg:flex-row justify-center items-center gap-x-20 gap-y-10 w-full mt-4 sm:mt-16 mb-14 sm:mb-20 mx-auto">
-        <div className="max-w-md">
+      <div className="max-w-6xl flex flex-col lg:flex-row justify-center items-center gap-x-16 gap-y-10 w-full mt-4 sm:mt-16 mb-14 sm:mb-20 mx-auto">
+        <div className="max-w-lg">
+          <Image
+            src={logo}
+            alt="BTS logo"
+            width="240"
+            style={{ marginBottom: "32px" }}
+          />
           <h1 className="mb-2 text-4xl font-normal tracking-tight text-sol-grey-accent">
             Brăila <span className="font-semibold">Tech</span>
-            <span className="text-sol-green font-semibold"> Sprint</span>
+            <span className="text-sol-yellow font-semibold"> Sprint</span>
           </h1>
           <p>
-            Hackathon Ediția I, 8-9 aprilie 2023 Biblioteca Județeană ”Panait
-            Istrati” Brăila
+            Hackathon Ediția II, 16-17 martie 2024, Palatul Tineretului Brăila
           </p>
         </div>
         <Terminal></Terminal>
       </div>
 
       <button
-        className="uppercase font-medium tracking-wider py-2 px-6 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg hover:shadow-lg hover:-translate-y-1 transition duration-200"
-        onClick={() =>
-          window.open("https://forms.gle/jjmE6cENHd9zA58V7", "_blank")
-        }
+        className="uppercase font-medium tracking-wider py-2 px-6 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg hover:shadow-lg hover:bg-sol-yellow-accent hover:-translate-y-1 transition duration-200"
+        onClick={() => window.open("#", "_blank")}
       >
         Înscrie-te
       </button>

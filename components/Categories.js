@@ -29,7 +29,7 @@ const Categories = () => {
     },
     {
       name: "CLI",
-      color: "bg-sol-green",
+      color: "bg-sol-yellow",
       icon: faTerminal,
       description:
         "Viitor backend developer? Planifică un sistem de baze de date și API-uri pentru noi soluții.",

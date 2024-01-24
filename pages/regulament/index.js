@@ -66,7 +66,7 @@ export default function Regulament() {
         <h2 className="font-semibold text-2xl sm:text-4xl">Regulament</h2>
       </div>
       <div
-        className="mx-auto mb-4 lg:mb-8 w-16 h-1 bg-sol-green"
+        className="mx-auto mb-4 lg:mb-8 w-16 h-1 bg-sol-yellow"
         data-aos="fade-down"
       ></div>
       <main

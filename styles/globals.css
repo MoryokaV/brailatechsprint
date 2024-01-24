@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,8 +14,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #002b36;
-  color: #839496;
+  background-color: #00252f;
+  color: #93acad;
 }
 
 a {

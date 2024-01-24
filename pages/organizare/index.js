@@ -136,7 +136,7 @@ export default function Team() {
         <h1 className="mb-2 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
           Cine suntem noi?
         </h1>
-        <div className="mx-auto mb-6 lg:mb-8 w-16 h-1 bg-sol-green"></div>
+        <div className="mx-auto mb-6 lg:mb-8 w-16 h-1 bg-sol-yellow"></div>
         <p className="tracking-wide text-center">
           Noi suntem echipa convinsă că Brăila trebuie să aibă propriul
           hackathon, că, pe lângă atâtea inițiative locale de robotică,
@@ -184,7 +184,7 @@ export default function Team() {
         <h1 className="mb-2 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
           Juriul
         </h1>
-        <div className="mx-auto mb-6 lg:mb-8 w-16 h-1 bg-sol-green"></div>
+        <div className="mx-auto mb-6 lg:mb-8 w-16 h-1 bg-sol-yellow"></div>
         <p className="tracking-wide text-center mb-10">
           Braila Tech Sprint este despre programare, excelență în educație,
           antreprenoriat si comunitate. De aceea i-am ales pe cei mai buni să
@@ -221,7 +221,7 @@ export default function Team() {
         <h1 className="mb-3 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
           Echipa organizatoare
         </h1>
-        <div className="mx-auto mb-8 lg:mb-8 w-16 h-1 bg-sol-green"></div>
+        <div className="mx-auto mb-8 lg:mb-8 w-16 h-1 bg-sol-yellow"></div>
         <ul className="flex list-none mx-auto justify-center flex-wrap gap-10">
           {teamMembers.map((member, index) => (
             <li key={index} className="flex flex-col items-center">

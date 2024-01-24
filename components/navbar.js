@@ -37,10 +37,11 @@ const Navbar = () => {
           </Link>
         </nav>
         <button
-          className="block sm:hidden outline-white outline-2 outline rounded-md h-5 w-5"
+          className="sm:hidden inline-flex justify-center items-center p-2 rounded-md border border-sol-grey-dark focus:outline-none focus:ring-2 focus:ring-sol-yellow-accent transition-all"
+          aria-label="menu"
           onClick={() => setMenu(!menu)}
         >
-          <IoMenu />
+          <IoMenu className="w-5 h-5" />
         </button>
       </header>
       <aside

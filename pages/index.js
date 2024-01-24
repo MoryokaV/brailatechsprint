@@ -8,6 +8,7 @@ import Image from "next/image";
 import logo from "public/bts.png";
 import wave1 from "public/wave1.svg";
 import wave2 from "public/wave2.svg";
+import IndexPartnersFlex from "@/components/partners";
 
 export default function Home() {
   return (
@@ -44,9 +45,11 @@ export default function Home() {
       <Navbar></Navbar>
       <main>
         <Masthead></Masthead>
+        <IndexPartnersFlex />
         <section
           className="mx-auto mb-16 w-full md:max-w-4xl px-4"
           data-aos="fade-down"
+          data-aos-delay="150"
         >
           <h3 className="text-2xl font-medium text-sol-grey-accent">
             Ce este Brăila Tech Sprint?
@@ -69,13 +72,16 @@ export default function Home() {
             apoi înscrie-te!
             <br></br>
             <br></br>
-            <span className="opacity-75 italic">— Echipa de organizare</span>
+            <span className="text-sol-grey-dark italic">
+              — Echipa de organizare
+            </span>
           </p>
         </section>
         {
           <section
             className="mx-auto mb-10 w-full md:max-w-4xl px-4"
             data-aos="fade-down"
+            data-aos-delay="300"
           >
             <h3 className="text-2xl font-medium text-sol-grey-accent">
               Ce proiecte sunt eligibile?
@@ -128,13 +134,13 @@ const Masthead = () => {
           src={wave1}
           alt="wave svg"
           style={{ width: "100%", height: "auto" }}
-          className="absolute z-20 bottom-0"
+          className="absolute z-20 bottom-0 pointer-events-none"
         />
         <Image
           src={wave2}
           alt="wave svg"
           style={{ width: "100%", height: "auto" }}
-          className="absolute z-10 bottom-0 scale-x-100"
+          className="absolute z-10 bottom-0 scale-x-100 pointer-events-none"
         />
       </div>
     </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import { FaMobileAlt, FaWindows, FaCode, FaTerminal } from "react-icons/fa";
 
 const Categories = () => {
@@ -26,7 +25,7 @@ const Categories = () => {
     },
     {
       name: "Web",
-      color: "bg-sol-yellow",
+      color: "bg-sol-green",
       icon: <FaCode className="text-white w-5 h-5" />,
       description:
         "Dacă îți place să creezi site-uri sau aplicații web ușor de folosit în browser, atunci îți sugerăm să propui o soluție Web!",
@@ -46,7 +45,7 @@ const Categories = () => {
             >
               {item.icon}
             </div>
-            <h4 className="group-hover:text-sol-green transition mb-2 text-lg font-semibold text-sol-grey-accent">
+            <h4 className="group-hover:text-sol-yellow-accent transition mb-2 text-lg font-semibold text-sol-grey-accent">
               {item.name}
             </h4>
             <p className="text-center opacity-90">{item.description}</p>

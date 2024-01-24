@@ -1,4 +1,4 @@
-// import SocialIcon from "./social_icons";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -7,11 +7,21 @@ const Footer = () => {
         <section>
           <h2 className="font-semibold text-xl">Social media</h2>
           <div className="mt-4 flex gap-3 brightness-75 hover:brightness-100">
-            {/* <SocialIcon */}
-            {/*   icon={faFacebook} */}
-            {/*   url="https://www.facebook.com/BibliotecaBraila" */}
-            {/* ></SocialIcon> */}
-            {/* <SocialIcon icon={faLink} url="https://bjbraila.ro"></SocialIcon> */}
+            <FaFacebook
+              className="w-5 h-5 cursor-pointer"
+              onClick={() =>
+                window.open("https://www.facebook.com/HackBTS", "_blank")
+              }
+            />
+            <FaInstagram
+              className="w-5 h-5 cursor-pointer"
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/brailatechsprint2024/",
+                  "_blank"
+                )
+              }
+            />
           </div>
         </section>
         <section>

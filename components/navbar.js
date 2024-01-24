@@ -13,7 +13,7 @@ const Navbar = () => {
       <header className="h-full max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         <Link className="text-sol-grey-accent text-2xl flex gap-3" href="/">
           <Image src={logo} width="65" alt="BTS logo"></Image>{" "}
-          <h2 className="font-normal tracking-tighter text-sol-grey-accent">
+          <h2 className="font-normal tracking-tighter text-sol-grey">
             Brăila<span className="font-semibold">Tech</span>
             <span className="text-sol-yellow font-semibold">Sprint</span>
           </h2>

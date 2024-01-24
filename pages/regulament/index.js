@@ -1,7 +1,6 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import { faBook, faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaBook, FaChevronRight } from "react-icons/fa";
 import htmlParser from "html-react-parser";
 import { RegulamentDoc } from "data/regulament";
 import { useState } from "react";
@@ -59,10 +58,7 @@ export default function Regulament() {
         className="mt-10 mb-2 flex flex-col jusify-center items-center gap-4"
         data-aos="fade-down"
       >
-        <FontAwesomeIcon
-          icon={faBook}
-          className="bg-sol-grey/50 p-4 w-20 h-20 sm:w-28 sm:h-28 rounded-md shadow-sm"
-        ></FontAwesomeIcon>
+        <FaBook className="bg-sol-grey/50 p-4 w-20 h-20 sm:w-28 sm:h-28 rounded-md shadow-sm" />
         <h2 className="font-semibold text-2xl sm:text-4xl">Regulament</h2>
       </div>
       <div
@@ -101,10 +97,7 @@ export default function Regulament() {
           {RegulamentDoc[currentIndex].paragraphs.map((content, index) => {
             return (
               <div key={index} className="flex items-center gap-4 mb-4">
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className="w-[10px] text-sol-bright-blue flex-shrink-0"
-                ></FontAwesomeIcon>
+                <FaChevronRight className="w-[10px] text-sol-bright-blue flex-shrink-0" />
                 <section className="tracking-wide">
                   {htmlParser(content)}
                 </section>

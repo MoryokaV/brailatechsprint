@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import { IoMenu } from "react-icons/io5";
 
 import logo from "public/bts.png";
 
@@ -41,7 +40,7 @@ const Navbar = () => {
           className="block sm:hidden outline-white outline-2 outline rounded-md h-5 w-5"
           onClick={() => setMenu(!menu)}
         >
-          <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+          <IoMenu />
         </button>
       </header>
       <aside

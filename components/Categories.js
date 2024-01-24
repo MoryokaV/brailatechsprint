@@ -1,43 +1,33 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMobileAlt,
-  faCode,
-  faTerminal,
-} from "@fortawesome/free-solid-svg-icons";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-import { faWindows } from "@fortawesome/free-brands-svg-icons";
-
-config.autoAddCss = false;
+import { FaMobileAlt, FaWindows, FaCode, FaTerminal } from "react-icons/fa";
 
 const Categories = () => {
   const items = [
     {
       name: "Mobile",
       color: "bg-sol-brred",
-      icon: faMobileAlt,
+      icon: <FaMobileAlt className="text-white" />,
       description:
         "Utilizarea telefoanelor mobile a crescut exponențial în ultimii ani. Impresionează-ne prin UI/UX deosebit și intră pe piața de mobile dev.",
     },
     {
       name: "Desktop",
       color: "bg-sol-bright-blue",
-      icon: faWindows,
+      icon: <FaWindows className="text-white" />,
       description:
         "Creează aplicații complexe, compatibile Windows, MacOS sau Linux menite să ruleze la cele mai înalte performanțe.",
     },
     {
       name: "CLI",
       color: "bg-sol-yellow",
-      icon: faTerminal,
+      icon: <FaTerminal className="text-white" />,
       description:
         "Viitor backend developer? Planifică un sistem de baze de date și API-uri pentru noi soluții.",
     },
     {
       name: "Web",
       color: "bg-sol-yellow",
-      icon: faCode,
+      icon: <FaCode className="text-white" />,
       description:
         "Dacă îți place să creezi site-uri sau aplicații web ușor de folosit în browser, atunci îți sugerăm să propui o soluție Web!",
     },
@@ -54,7 +44,7 @@ const Categories = () => {
             <div
               className={`rounded-full ${item.color} h-12 w-12 grid place-items-center mb-4`}
             >
-              <FontAwesomeIcon icon={item.icon} className="text-white fa-lg" />
+              {item.icon}
             </div>
             <h4 className="group-hover:text-green-200 transition mb-2 text-lg font-semibold text-sol-grey-accent">
               {item.name}

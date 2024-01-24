@@ -1,6 +1,4 @@
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-import SocialIcon from "./social_icons";
+// import SocialIcon from "./social_icons";
 
 const Footer = () => {
   return (
@@ -9,11 +7,11 @@ const Footer = () => {
         <section>
           <h2 className="font-semibold text-xl">Social media</h2>
           <div className="mt-4 flex gap-3 brightness-75 hover:brightness-100">
-            <SocialIcon
-              icon={faFacebook}
-              url="https://www.facebook.com/BibliotecaBraila"
-            ></SocialIcon>
-            <SocialIcon icon={faLink} url="https://bjbraila.ro"></SocialIcon>
+            {/* <SocialIcon */}
+            {/*   icon={faFacebook} */}
+            {/*   url="https://www.facebook.com/BibliotecaBraila" */}
+            {/* ></SocialIcon> */}
+            {/* <SocialIcon icon={faLink} url="https://bjbraila.ro"></SocialIcon> */}
           </div>
         </section>
         <section>

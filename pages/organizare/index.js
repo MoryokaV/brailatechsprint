@@ -1,12 +1,7 @@
 import Navbar from "components/navbar";
 import Footer from "@/components/footer";
 import Image from "next/image";
-import {
-  faFacebook,
-  faGithub,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
 import { NextSeo } from "next-seo";
 
 export default function Team() {
@@ -245,7 +240,7 @@ export default function Team() {
                     rel="noopener noreferrer"
                     className="w-5 h-5 mx-2 text-gray-500 hover:text-gray-300"
                   >
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <FaInstagram />
                   </a>
                 )}
                 <a
@@ -254,7 +249,7 @@ export default function Team() {
                   rel="noopener noreferrer"
                   className="w-5 h-5 mx-2 text-gray-500 hover:text-gray-300"
                 >
-                  <FontAwesomeIcon icon={index == 0 ? faFacebook : faGithub} />
+                  {index == 0 ? <FaFacebook /> : <FaGithub />}
                 </a>
               </div>
             </li>

@@ -33,26 +33,36 @@ const Categories = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-min gap-5">
-      {items.map((item, index) => {
-        return (
-          <div
-            key={index}
-            className="group hover:scale-105 hover:shadow transition-all duration-500 bg-black/25 rounded-tl-lg rounded-br-lg p-4 flex flex-col items-center justify-start"
-          >
+    <section
+      className="mx-auto mb-16 w-full md:max-w-4xl px-4"
+      data-aos="fade-down"
+      data-aos-delay="300"
+    >
+      <h3 className="text-2xl font-medium text-sol-grey-accent">
+        Ce proiecte sunt eligibile?
+      </h3>
+      <div className="mt-1 mb-4 h-1 w-16 bg-sol-yellow"></div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-min gap-5">
+        {items.map((item, index) => {
+          return (
             <div
-              className={`rounded-full ${item.color} p-3 grid place-items-center mb-4`}
+              key={index}
+              className="group hover:scale-105 hover:shadow transition-all duration-500 bg-black/25 rounded-tl-lg rounded-br-lg p-4 flex flex-col items-center justify-start"
             >
-              {item.icon}
+              <div
+                className={`rounded-full ${item.color} p-3 grid place-items-center mb-4`}
+              >
+                {item.icon}
+              </div>
+              <h4 className="group-hover:text-sol-yellow-accent transition mb-2 text-lg font-semibold text-sol-grey-accent">
+                {item.name}
+              </h4>
+              <p className="text-center opacity-90">{item.description}</p>
             </div>
-            <h4 className="group-hover:text-sol-yellow-accent transition mb-2 text-lg font-semibold text-sol-grey-accent">
-              {item.name}
-            </h4>
-            <p className="text-center opacity-90">{item.description}</p>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </section>
   );
 };
 

@@ -12,6 +12,7 @@ import FAQ from "@/components/faq";
 import logo from "public/bts.png";
 import wave1 from "public/wave1.svg";
 import wave2 from "public/wave2.svg";
+import Reviews from "@/components/reviews";
 
 export default function Home() {
   return (
@@ -80,18 +81,9 @@ export default function Home() {
             </span>
           </p>
         </section>
-        <section
-          className="mx-auto mb-16 w-full md:max-w-4xl px-4"
-          data-aos="fade-down"
-          data-aos-delay="300"
-        >
-          <h3 className="text-2xl font-medium text-sol-grey-accent">
-            Ce proiecte sunt eligibile?
-          </h3>
-          <div className="mt-1 mb-4 h-1 w-16 bg-sol-yellow"></div>
-          <Categories />
-        </section>
+        <Categories />
         <FAQ />
+        <Reviews />
         <CTA />
       </main>
       <Footer />

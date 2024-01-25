@@ -47,7 +47,7 @@ const Categories = () => {
           return (
             <div
               key={index}
-              className="group hover:scale-105 hover:shadow transition-all duration-500 bg-black/25 rounded-tl-lg rounded-br-lg p-4 flex flex-col items-center justify-start"
+              className="group hover:scale-105 hover:shadow transition-all duration-500 bg-black/25 rounded-tl-xl rounded-br-xl p-4 flex flex-col items-center justify-start"
             >
               <div
                 className={`rounded-full ${item.color} p-3 grid place-items-center mb-4`}

@@ -99,12 +99,13 @@ const Masthead = () => {
         className="flex flex-col items-center justify-center p-8 mb-8"
       >
         <div className="max-w-6xl flex flex-col lg:flex-row justify-center items-center gap-x-16 gap-y-10 w-full mt-4 sm:mt-16 mb-14 sm:mb-20 mx-auto">
-          <div className="max-w-lg">
+          <div className="max-w-lg text-center lg:text-left">
             <Image
               src={logo}
               alt="BTS logo"
               width="240"
               style={{ marginBottom: "32px" }}
+              className="mx-auto lg:mx-0 -translate-x-2"
             />
             <h1 className="mb-2 text-4xl font-normal tracking-tight text-sol-grey-accent">
               Brăila <span className="font-semibold">Tech</span>
@@ -118,13 +119,13 @@ const Masthead = () => {
         </div>
 
         <button
-          className="uppercase font-medium tracking-wider py-2 px-6 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg hover:shadow-lg hover:bg-sol-yellow-accent hover:-translate-y-1 transition duration-200"
+          className="uppercase font-medium tracking-wider py-3 px-8 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg hover:shadow-lg hover:bg-sol-yellow-accent hover:-translate-y-1 transition duration-200"
           onClick={() => window.open("#", "_blank")}
         >
           Înscrie-te
         </button>
       </div>
-      <div className="w-full h-40 relative">
+      <div className="w-full h-10 relative">
         <Image
           src={wave1}
           alt="wave svg"
@@ -148,28 +149,33 @@ const CTA = () => {
       data-aos="fade-down"
       className="mx-auto mb-10 w-full md:max-w-4xl px-4"
     >
-      <h3 className="text-center mb-6 font-medium text-2xl">
-        Ne poți contacta oricând pe{" "}
-        <span className="text-sol-yellow">rețelele sociale</span>
+      <h3 className="text-center mb-4 font-medium text-2xl">
+        Ești gata de o <span className="text-sol-yellow">nouă aventură</span> ?
       </h3>
-      <div className="border border-sol-grey-dark/50 flex px-8 py-6 rounded-lg font-medium text-2xl">
+      <p className="text-center mb-3">
+        Urmărește-ne pe rețelele sociale pentru a afla ultimele noutăți legate
+        de eveniment. Prezentări, idei, știri, tips&tricks, toate acestea te
+        așteaptă pe paginile noastre oficiale. Pentru orice nelămurire ne poți
+        contacta pe adresa de email.
+      </p>
+      <div className="border border-sol-grey-dark/0 flex py-4 rounded-lg font-medium text-xl">
         <Link
           href="https://www.instagram.com/brailatechsprint2024/"
           target="_blank"
-          className="transition-all hover:brightness-125 flex gap-2 items-center justify-center border-r border-r-sol-grey/50 w-1/3"
+          className="transition-all hover:brightness-125 flex flex-col gap-2 items-center justify-center border-r border-r-sol-grey/40 w-1/3"
         >
           <FaInstagram className="text-sol-magenta h-9 w-9" /> Instagram
         </Link>
         <Link
           href="https://www.facebook.com/HackBTS"
           target="_blank"
-          className="transition-all hover:brightness-125 flex gap-2 items-center justify-center border-r border-r-sol-grey/50 w-1/3"
+          className="transition-all hover:brightness-125 flex flex-col gap-2 items-center justify-center border-r border-r-sol-grey/40 w-1/3"
         >
           <FaFacebook className="text-sol-bright-blue h-9 w-9" /> Facebook
         </Link>
         <Link
           href="mailto:hackathon@bjbraila.ro"
-          className="transition-all hover:brightness-125 flex gap-2 items-center justify-center w-1/3"
+          className="transition-all hover:brightness-125 flex flex-col gap-2 items-center justify-center w-1/3"
         >
           <FaEnvelope className="text-sol-green h-9 w-9" /> E-Mail
         </Link>

@@ -6,14 +6,14 @@ import { FaQuestion } from "react-icons/fa";
 const Reviews = () => {
   return (
     <section
-      className="mx-auto mb-16 w-full md:max-w-4xl px-4 grid grid-cols-2 gap-6"
+      className="mx-auto mb-16 w-full md:max-w-4xl px-4 grid sm:grid-cols-2 gap-6"
       data-aos="fade-down"
       data-aos-delay="300"
     >
       <div className="">
         <div className="relative h-20 mb-8 w-full">
-          <FaQuestion className="absolute z-20 fill-sol-blue-accent brightness-125 h-20 w-20 -translate-x-1/2 left-1/2" />
-          <FaQuestion className="absolute z-10 fill-sol-blue-accent h-20 w-20 rotate-[30deg] -translate-x-1 left-1/2" />
+          <FaQuestion className="absolute z-20 fill-sol-blue-accent brightness-125 h-20 w-20 left-0 sm:-translate-x-1/2 sm:left-1/2" />
+          <FaQuestion className="absolute z-10 fill-sol-blue-accent h-20 w-20 rotate-[30deg] left-10 sm:-translate-x-1 sm:left-1/2" />
         </div>
         <h3 className="text-2xl font-medium text-sol-grey-accent">
           Părerile foștilor concurenți
@@ -34,17 +34,18 @@ const Reviews = () => {
         </p>
       </div>
       <div className="flex flex-col gap-4">
-        <FeedbackItem name="Mihai Scarlet" img={mihai} end={true}>
+        <FeedbackItem name="Raluca Toma" img={mihai} end={true}>
           Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
           cillum sint consectetur cupidatat.
         </FeedbackItem>
-        <FeedbackItem name="Mihai Scarlet" img={mihai}>
-          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
-          cillum sint consectetur cupidatat.
+        <FeedbackItem name="Eva Pacea" img={mihai}>
+          Momentul în care vedeți că un proiect realizat de voi într-un timp
+          atat de scurt dă roade, satisfactia oferita întrece orice sentiment.
         </FeedbackItem>
         <FeedbackItem name="Mihai Scarlet" img={mihai} end={true}>
-          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
-          cillum sint consectetur cupidatat.
+          Mi-am depășit limitele și am învățat lucruri noi, contracronometru.
+          Îmi doresc ca un număr cat mai mare de elevi să se dezvolte și să își
+          cunoască adevaratul potențial.
         </FeedbackItem>
       </div>
     </section>
@@ -54,12 +55,16 @@ const Reviews = () => {
 const FeedbackItem = ({ name, img, end, children }) => {
   return (
     <article
-      className={`w-5/6 bg-sol-blue-accent rounded-md px-8 py-3 transition-all hover:shadow-lg hover:-translate-y-2 duration-300 ${
+      className={`w-5/6 bg-sol-blue-accent px-8 py-3 rounded-tl-xl rounded-br-xl transition-all hover:shadow-lg hover:-translate-y-2 duration-300 ${
         end && "self-end"
       }`}
     >
       <div className="flex items-center gap-2 mb-3">
-        <Image src={img} className="rounded-full h-10 w-10" alt={name} />
+        <Image
+          src={img}
+          className="rounded-full h-[2.7rem] w-[2.7rem]"
+          alt={name}
+        />
         <p className="font-medium">{name}</p>
       </div>
       <p className="italic">&quot;{children}&quot;</p>

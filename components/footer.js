@@ -3,8 +3,8 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="mt-auto w-full sol-blue bg-sol-dark-blue">
-      <div className="max-w-4xl px-5 py-3 gap-x-10 gap-y-4 mx-auto flex flex-wrap items-center justify-center sm:justify-between">
-        <section>
+      <div className="max-w-4xl p-4 gap-x-4 gap-y-6 mx-auto grid grid-cols-2 sm:grid-cols-3 items-center justify-center">
+        <section className="sm:mx-auto">
           <h2 className="font-semibold text-xl">Social media</h2>
           <div className="mt-4 flex gap-3 brightness-75 hover:brightness-100">
             <FaFacebook
@@ -24,12 +24,12 @@ const Footer = () => {
             />
           </div>
         </section>
-        <section>
+        <section className="order-3 col-span-2 sm:order-2 mx-auto">
           <p className="brightness-75 text-sm">
             Copyright @ {new Date().getFullYear()} Braila Tech Sprint
           </p>
         </section>
-        <section>
+        <section className="sm:mx-auto order-2 sm:order-3">
           <h2 className="font-semibold text-xl">Contact</h2>
           <div className="mt-4 flex gap-3">
             <a

@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import Image from "next/image";
 import { FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
 import { NextSeo } from "next-seo";
+import { partners } from "@/data/partners";
 
 export default function Team() {
   const teamMembers = [
@@ -36,7 +37,7 @@ export default function Team() {
     },
     {
       name: "Ștefan Ghețu",
-      role: "Regulament",
+      role: "Lider voluntari",
       image: "/team/stefan ghetu.jpeg",
       social: {
         instagram: "https://www.instagram.com/1grizz5/",
@@ -177,24 +178,21 @@ export default function Team() {
         </p>
         <br></br>
         <p className="flex justify-center font-semibold italic mb-4 text-sol-grey-accent">
-          Mulțumim sponsorilor noștri
+          Mulțumim sponsorilor și partenerilor noștri
         </p>
-        <div className="flex mx-auto justify-center flex-wrap max-w-4xl gap-x-6 gap-y-3">
-          <Image
-            className="h-auto"
-            src="http://www.ime.ro/templates/rt_camber/images/logo/dark/logo.png"
-            width="120"
-            height="0"
-            alt="IME Romania logo"
-          />
-          <Image
-            className="h-auto"
-            src="https://i.imgur.com/xKeCwb3.png"
-            width="260"
-            height="0"
-            alt="Pacronex Braila"
-            unoptimized
-          />
+        <div className="flex flex-row flex-wrap items-center justify-center gap-x-6 gap-y-4">
+          {partners.map((partner, index) => {
+            return (
+              <Image
+                src={partner.img}
+                alt={partner.name}
+                key={index}
+                className={`saturate-50 ${
+                  partner.invert && "invert"
+                } opacity-60 w-auto max-h-20`}
+              />
+            );
+          })}
         </div>
       </section>
 
@@ -213,7 +211,7 @@ export default function Team() {
           competiție. Profesori, programatori, antreprenori sunt aici să înveți
           de la ei și să te inspire. Succes tuturor!
         </p>
-        <ul className="flex list-none mx-auto justify-center flex-wrap max-w-4xl gap-10">
+        <ul className="grid grid-cols-2 list-none mx-auto justify-center md:flex flex-wrap gap-10 max-md:gap-y-10 max-md:gap-x-4">
           {judges.map((member, index) => (
             <li key={index} className="flex flex-col items-center">
               <Image
@@ -243,7 +241,7 @@ export default function Team() {
           Echipa organizatoare
         </h1>
         <div className="mx-auto mb-8 lg:mb-8 w-16 h-1 bg-sol-yellow"></div>
-        <ul className="flex list-none mx-auto justify-center flex-wrap gap-10">
+        <ul className="grid grid-cols-2 list-none mx-auto justify-center md:flex flex-wrap gap-10 max-md:gap-y-10 max-md:gap-x-4">
           {teamMembers.map((member, index) => (
             <li key={index} className="flex flex-col items-center">
               <Image

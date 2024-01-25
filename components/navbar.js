@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <header className="sticky z-30 top-0 left-0 right-0 w-full bg-sol-blue-accent/50 backdrop-blur-lg">
-      <header className="h-full max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <header className="h-full max-w-6xl mx-auto flex items-center justify-between p-4">
         <Link className="text-sol-grey-accent text-2xl flex gap-3" href="/">
           <Image src={logo} width="65" alt="BTS logo"></Image>{" "}
           <h2 className="font-normal tracking-tighter text-sol-grey">

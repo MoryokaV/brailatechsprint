@@ -9,65 +9,91 @@ export default function Team() {
     {
       name: "Corina Ciuraru",
       role: "Șef serviciu Biblioteca Județeană Brăila",
-      image: "/corina ciuraru.jpg",
+      image: "/team/corina ciuraru.jpg",
       social: {
-        github: "https://www.facebook.com/corina.ciuraru",
+        facebook: "https://www.facebook.com/corina.ciuraru",
       },
     },
     {
       name: "Mario Vlaviano",
-      role: "Mobile & Web dev",
-      image: "/mario vlaviano 2.webp",
+      role: "Project Manager",
+      image: "/team/mario vlaviano 2.webp",
       social: {
         instagram: "https://www.instagram.com/mario.vlv/",
+        facebook: "https://www.facebook.com/mario.vlaviano.75",
         github: "https://github.com/moryokav",
       },
     },
     {
       name: "Andrei Iașar",
-      role: "Backend dev",
-      image: "/andrei iasar.jpeg",
+      role: "Președinte CJE Brăila",
+      image: "/team/andrei iasar.jpeg",
       social: {
         instagram: "https://www.instagram.com/andrei.isr/",
+        facebook: "https://www.facebook.com/andrei.isr",
         github: "https://github.com/andreiusq",
       },
     },
     {
       name: "Ștefan Ghețu",
-      role: "Marketing",
-      image: "/stefan ghetu.jpeg",
+      role: "Regulament",
+      image: "/team/stefan ghetu.jpeg",
       social: {
         instagram: "https://www.instagram.com/1grizz5/",
-        github: "https://github.com/ursus161",
+      },
+    },
+    {
+      name: "Briana Tîrîlă",
+      role: "Designer",
+      image: "/team/briana.jpg",
+      social: {
+        instagram: "https://www.instagram.com/briana.tirila/",
+        facebook: "https://www.facebook.com/briana.maria.tirila18",
+      },
+    },
+    {
+      name: "Ștefan Oprea",
+      role: "Social Media",
+      image: "/team/oprea.jpg",
+      social: {
+        instagram: "https://www.instagram.com/stefanopreaa/",
+      },
+    },
+    {
+      name: "Mihai Scarlet",
+      role: "Marketing",
+      image: "/team/stefan ghetu.jpeg",
+      social: {
+        instagram: "https://www.instagram.com/burlakul_/",
       },
     },
   ];
 
   const judges = [
     {
-      name: "Prof. Aurelia Ion",
-      role: "Inspector şcolar informatică",
-      image: "/aura ion.jpg",
+      name: "Ana-Maria Stancu",
+      role: "RoboHub founder",
+      image: "/team/ana.jpeg",
     },
     {
-      name: "conf. dr. Răzvan Șolea",
-      role: "prodecan UGAL AC @ Galați",
-      image: "/razvan solea.jpg",
+      name: "Florentina Savu",
+      role: "CEO Solar Watts",
+      image: "/team/savu.jpeg",
     },
     {
-      name: "Daniel Marinescu",
+      name: "Comming soon",
       role: "fondator IME România",
-      image: "/daniel marinescu.jpeg",
+      image: "/team/daniel marinescu.jpeg",
     },
     {
       name: "Teodor Claudiu Ciuraru",
-      role: "Senior React Native Developer",
-      image: "/teodor ciuraru.jpg",
+      role: "Senior Software Developer",
+      image: "/team/teodor ciuraru.jpg",
     },
     {
       name: "Mario Vlaviano",
-      role: "Middle Flutter Developer - Elev",
-      image: "/mario vlaviano 1.jpeg",
+      role: "Mid Full-Stack Developer",
+      image: "/team/mario vlaviano 1.jpeg",
     },
   ];
 
@@ -210,7 +236,7 @@ export default function Team() {
       </section>
 
       <section
-        className="mx-auto mb-10 w-full md:max-w-4xl px-4"
+        className="mx-auto mb-10 w-full md:max-w-5xl px-4"
         data-aos="fade-down"
       >
         <h1 className="mb-3 text-4xl font-normal tracking-tight text-sol-grey-accent text-center">
@@ -233,24 +259,38 @@ export default function Team() {
               </h2>
               <p className="text-center mb-4">{member.role}</p>
               <div className="flex items-center">
-                {index != 0 && (
+                {member.social.instagram !== undefined && (
                   <a
                     href={member.social.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-5 h-5 mx-2 text-gray-500 hover:text-gray-300"
+                    className="mx-2 text-gray-500 hover:text-gray-300"
                   >
-                    <FaInstagram />
+                    <FaInstagram className="w-5 h-5" />
                   </a>
                 )}
-                <a
-                  href={member.social.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-5 h-5 mx-2 text-gray-500 hover:text-gray-300"
-                >
-                  {index == 0 ? <FaFacebook /> : <FaGithub />}
-                </a>
+
+                {member.social.facebook !== undefined && (
+                  <a
+                    href={member.social.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mx-2 text-gray-500 hover:text-gray-300"
+                  >
+                    <FaFacebook className="w-5 h-5" />
+                  </a>
+                )}
+
+                {member.social.github !== undefined && (
+                  <a
+                    href={member.social.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mx-2 text-gray-500 hover:text-gray-300"
+                  >
+                    <FaGithub className="w-5 h-5" />
+                  </a>
+                )}
               </div>
             </li>
           ))}

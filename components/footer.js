@@ -24,7 +24,7 @@ const Footer = () => {
             />
           </div>
         </section>
-        <section className="order-3 col-span-2 sm:order-2 mx-auto">
+        <section className="order-3 max-sm:col-span-2 sm:order-2 mx-auto">
           <p className="brightness-75 text-sm">
             Copyright @ {new Date().getFullYear()} Braila Tech Sprint
           </p>

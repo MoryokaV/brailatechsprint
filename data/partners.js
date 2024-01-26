@@ -17,16 +17,16 @@ export const partners = [
     name: "Biblioteca Judeteana Braila",
   },
   {
-    img: conaf,
-    name: "CONAF Romania",
-  },
-  {
     img: pmbr,
     name: "Primaria Municipiului Braila",
   },
   {
     img: cj,
     name: "Consiliul Judetean Braila",
+  },
+  {
+    img: conaf,
+    name: "CONAF Romania",
   },
   {
     img: cje,
@@ -48,10 +48,10 @@ export const partners = [
     name: "APAN Automobile",
     invert: true,
   },
-  {
-    img: alma,
-    name: "ALMA resort",
-  },
+  // {
+  //   img: alma,
+  //   name: "ALMA resort",
+  // },
   {
     img: sw,
     name: "Solar Watts",

@@ -32,3 +32,7 @@ a {
 .doc-list {
   list-style: inside;
 }
+
+.masthead {
+  min-height: calc(100vh - 64px);
+}

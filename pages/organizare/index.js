@@ -62,8 +62,8 @@ export default function Team() {
     },
     {
       name: "Mihai Scarlet",
-      role: "Marketing",
-      image: "/team/stefan ghetu.jpeg",
+      role: "Secretar executiv CJE",
+      image: "/team/mihai.jpg",
       social: {
         instagram: "https://www.instagram.com/burlakul_/",
       },
@@ -80,11 +80,6 @@ export default function Team() {
       name: "Florentina Savu",
       role: "CEO Solar Watts",
       image: "/team/savu.jpeg",
-    },
-    {
-      name: "Comming soon",
-      role: "fondator IME România",
-      image: "/team/daniel marinescu.jpeg",
     },
     {
       name: "Teodor Claudiu Ciuraru",

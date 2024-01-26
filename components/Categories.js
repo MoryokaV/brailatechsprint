@@ -36,7 +36,6 @@ const Categories = () => {
     <section
       className="mx-auto mb-16 w-full md:max-w-4xl px-4"
       data-aos="fade-down"
-      data-aos-delay="300"
     >
       <h3 className="text-2xl font-medium text-sol-grey-accent">
         Ce proiecte sunt eligibile?

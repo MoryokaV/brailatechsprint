@@ -48,12 +48,11 @@ export default function Home() {
       />
       <Navbar></Navbar>
       <main>
-        <Masthead></Masthead>
+        <Masthead />
         <IndexPartnersFlex />
         <section
           className="mx-auto mb-16 w-full md:max-w-4xl px-4"
           data-aos="fade-down"
-          data-aos-delay="150"
         >
           <h3 className="text-2xl font-medium text-sol-grey-accent">
             Ce este Brăila Tech Sprint?
@@ -93,12 +92,12 @@ export default function Home() {
 
 const Masthead = () => {
   return (
-    <div className="min-h-[95vh] w-full flex flex-col justify-between bg-[#002B36] mb-8">
+    <div className="masthead w-full flex flex-col justify-between bg-[#002B36] mb-8">
       <div
         data-aos="zoom-in"
-        className="flex flex-col items-center justify-center p-8 mb-8"
+        className="flex flex-col items-center justify-center p-8 z-30"
       >
-        <div className="max-w-6xl flex flex-col lg:flex-row justify-center items-center gap-x-16 gap-y-10 w-full mt-4 sm:mt-16 mb-14 sm:mb-20 mx-auto">
+        <div className="max-w-6xl flex flex-col lg:flex-row justify-center items-center gap-x-16 gap-y-10 w-full sm:mt-16 mb-14 sm:mb-20 mx-auto">
           <div className="max-w-lg text-center lg:text-left">
             <Image
               src={logo}
@@ -119,23 +118,29 @@ const Masthead = () => {
         </div>
 
         <button
-          className="uppercase font-medium tracking-wider py-3 px-8 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg hover:shadow-lg hover:bg-sol-yellow-accent hover:-translate-y-1 transition duration-200"
+          className="uppercase font-medium tracking-wider py-3 px-8 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg hover:shadow-xl hover:bg-sol-yellow-accent hover:-translate-y-1 transition duration-200"
           onClick={() => window.open("#", "_blank")}
         >
           Înscrie-te
         </button>
       </div>
-      <div className="w-full h-10 relative">
+      <div className="w-full relative">
         <Image
           src={wave1}
           alt="wave svg"
-          style={{ width: "100%", height: "auto" }}
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
           className="absolute z-20 bottom-0 pointer-events-none"
         />
         <Image
           src={wave2}
           alt="wave svg"
-          style={{ width: "100%", height: "auto" }}
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
           className="absolute z-10 bottom-0 scale-x-100 pointer-events-none"
         />
       </div>

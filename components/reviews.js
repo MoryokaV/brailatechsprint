@@ -1,6 +1,8 @@
 import Image from "next/image";
 
-import mihai from "public/feedback/mihai.jpeg";
+import raluca from "public/feedback/raluca.jpeg";
+import eva from "public/feedback/eva.jpeg";
+import mihai from "public/feedback/mihai.jpg";
 import { FaQuestion } from "react-icons/fa";
 
 const Reviews = () => {
@@ -8,7 +10,6 @@ const Reviews = () => {
     <section
       className="mx-auto mb-16 w-full md:max-w-4xl px-4 grid sm:grid-cols-2 gap-6"
       data-aos="fade-down"
-      data-aos-delay="300"
     >
       <div className="">
         <div className="relative h-20 mb-8 w-full">
@@ -34,11 +35,11 @@ const Reviews = () => {
         </p>
       </div>
       <div className="flex flex-col gap-4">
-        <FeedbackItem name="Raluca Toma" img={mihai} end={true}>
+        <FeedbackItem name="Raluca Toma" img={raluca} end={true}>
           Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
           cillum sint consectetur cupidatat.
         </FeedbackItem>
-        <FeedbackItem name="Eva Pacea" img={mihai}>
+        <FeedbackItem name="Eva Pacea" img={eva}>
           Momentul în care vedeți că un proiect realizat de voi într-un timp
           atat de scurt dă roade, satisfactia oferita întrece orice sentiment.
         </FeedbackItem>

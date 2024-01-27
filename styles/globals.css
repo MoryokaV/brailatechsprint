@@ -34,5 +34,5 @@ a {
 }
 
 .masthead {
-  min-height: calc(100vh - 64px);
+  min-height: min(calc(100vh - 64px), 840px);
 }

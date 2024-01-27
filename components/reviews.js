@@ -36,8 +36,9 @@ const Reviews = () => {
       </div>
       <div className="flex flex-col gap-4">
         <FeedbackItem name="Raluca Toma" img={raluca} end={true}>
-          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
-          cillum sint consectetur cupidatat.
+          O experiență remarcabilă ce te motivează să depășești barierele
+          confortului și să îți valorifici atât abilitățile tehnice, cât și cele
+          sociale, sub presiunea timpului.
         </FeedbackItem>
         <FeedbackItem name="Eva Pacea" img={eva}>
           Momentul în care vedeți că un proiect realizat de voi într-un timp

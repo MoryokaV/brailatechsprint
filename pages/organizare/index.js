@@ -18,7 +18,7 @@ export default function Team() {
     {
       name: "Mario Vlaviano",
       role: "Project Manager",
-      image: "/team/mario vlaviano 2.webp",
+      image: "/team/mario vlaviano 1.jpeg",
       social: {
         instagram: "https://www.instagram.com/mario.vlv/",
         facebook: "https://www.facebook.com/mario.vlaviano.75",
@@ -38,7 +38,7 @@ export default function Team() {
     {
       name: "Ștefan Ghețu",
       role: "Lider voluntari",
-      image: "/team/stefan ghetu.jpeg",
+      image: "/team/stefan ghetu.jpg",
       social: {
         instagram: "https://www.instagram.com/1grizz5/",
       },
@@ -89,7 +89,7 @@ export default function Team() {
     {
       name: "Mario Vlaviano",
       role: "Mid Full-Stack Developer",
-      image: "/team/mario vlaviano 1.jpeg",
+      image: "/team/mario vlaviano 2.jpg",
     },
   ];
 

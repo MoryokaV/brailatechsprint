@@ -21,17 +21,8 @@ const Reviews = () => {
         </h3>
         <div className="mt-1 mb-4 h-1 w-16 bg-sol-yellow"></div>
         <p>
-          Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
-          enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
-          exercitation amet. Nisi anim cupidatat excepteur officia.
-          Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
-          voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
-          officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
-          commodo officia dolor Lorem duis laboris cupidatat officia voluptate.
-          Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis
-          officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis
-          sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-          consectetur et est culpa et culpa duis.
+        Organizatorii BTS 2024 pun pe primul loc satisfacția concurenților și dorința acestora de a reveni în competiție și la edițiile viitoare. De aceea, feedback-ul reprezintă un element esențial și benefic pentru îmbunătățirea continuă a evenimentului.  Avem câteva motive foarte bune pentru a colecta impresiile participanților: Vom ști în ce măsură concurenții și-au îmbunătățit competențele IT și antreprenoriale. Înțelegem cum să ajustăm totul astfel încât să oferim un eveniment de calitate. Dorim să construim o comunitate interconectată, pentru că acest hackathon este și un eveniment social pe parcursul căruia concurenții se cunosc și relaționează între ei. Cultivăm atmosfera pozitivă prin recunoașterea eforturilor și reușitelor echipei de organizare, dar și pe cele ale concurenților, motivând astfel participarea la evenimentele viitoare.
+        În concluzie, spuneți-vă părerea, fiecare opinie este utilă și astfel Brăila Tech Sprint devine un hackathon mai performant și mai atractiv!
         </p>
       </div>
       <div className="flex flex-col gap-4">

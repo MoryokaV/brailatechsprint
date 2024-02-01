@@ -111,7 +111,7 @@ const Masthead = () => {
               <span className="text-sol-yellow font-semibold"> Sprint</span>
             </h1>
             <p>
-              Hackathon Ediția II, 16-17 martie 2024, Palatul Tineretului Brăila
+              Hackathon Ediția II, 24-25 februarie 2024, Casa Tineretului Brăila
             </p>
           </div>
           <Terminal></Terminal>
@@ -119,7 +119,7 @@ const Masthead = () => {
 
         <button
           className="uppercase font-medium tracking-wider py-3 px-8 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg hover:shadow-xl hover:bg-sol-yellow-accent hover:-translate-y-1 transition duration-200"
-          onClick={() => window.open("#", "_blank")}
+          onClick={() => window.open("https://forms.gle/brMiErFFD7ZSYEBq6", "_blank")}
         >
           Înscrie-te
         </button>

@@ -1,5 +1,5 @@
 
-# Brăila Tech Sprint 2023
+# Brăila Tech Sprint 2024
 
 Un hackathon (în română scris și hackaton, cunoscut și ca hack day, hackfest sau codefest) este un eveniment în care mai mulți programatori, dar și alte persoane ce participă la dezvoltarea de software (designeri, manageri de proiect etc.), colaborează pentru dezvoltarea unui proiect software.
 Aceasta este pagina oficiala a primei editii a concursului.

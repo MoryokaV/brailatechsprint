@@ -60,14 +60,6 @@ export default function Team() {
         instagram: "https://www.instagram.com/stefanopreaa/",
       },
     },
-    {
-      name: "Mihai Scarlet",
-      role: "Secretar executiv CJE",
-      image: "/team/mihai.jpg",
-      social: {
-        instagram: "https://www.instagram.com/burlakul_/",
-      },
-    },
   ];
 
   const judges = [
@@ -97,7 +89,10 @@ export default function Team() {
     <>
       <NextSeo
         title="Braila Tech Sprint - Organizare"
-        description="Organizatorii hackathonului organizat in Braila, Romania"
+        description="Noi suntem echipa convinsă că Brăila trebuie să aibă propriul
+          hackathon, că, pe lângă atâtea inițiative locale de robotică,
+          informatică etc, avem nevoie de cât mai multe competiții care să
+          demonstreze că tinerii noștri sunt bine pregătiți pentru Era digitală."
         keywords={[
           "hackathon",
           "brailatechsprint",
@@ -160,7 +155,7 @@ export default function Team() {
           informatică etc, avem nevoie de cât mai multe competiții care să
           demonstreze că tinerii noștri sunt bine pregătiți pentru Era digitală.
           Ne-am sfătuit, am visat, am planificat, am muncit și, acum, anunțăm cu
-          entuziasm primul hackathon local, Brăila Tech Sprint 2023. Sperăm să
+          entuziasm primul hackathon local, Brăila Tech Sprint 2024. Sperăm să
           scoatem la iveală tot ceea ce este mai bun în materie de programare în
           Brăila și să inspirăm tinerii să urmeze acest drum în viață. Energia
           noastră nu ar fi fost suficientă, dacă nu am fi avut alături de noi
@@ -236,7 +231,7 @@ export default function Team() {
           Echipa organizatoare
         </h1>
         <div className="mx-auto mb-8 lg:mb-8 w-16 h-1 bg-sol-yellow"></div>
-        <ul className="grid grid-cols-2 list-none mx-auto justify-center md:flex flex-wrap gap-10 max-md:gap-y-10 max-md:gap-x-4">
+        <ul className="grid grid-cols-2 list-none mx-auto justify-center md:grid-cols-3 flex-wrap gap-x-0 gap-y-10 max-md:gap-x-4">
           {teamMembers.map((member, index) => (
             <li key={index} className="flex flex-col items-center">
               <Image

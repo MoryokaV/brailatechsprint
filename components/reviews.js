@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import raluca from "public/feedback/raluca.jpeg";
 import eva from "public/feedback/eva.jpeg";
-import mihai from "public/feedback/mihai.jpg";
+import bacalu from "public/feedback/bacalu.jpg";
 import { FaQuestion } from "react-icons/fa";
 
 const Reviews = () => {
@@ -21,8 +21,21 @@ const Reviews = () => {
         </h3>
         <div className="mt-1 mb-4 h-1 w-16 bg-sol-yellow"></div>
         <p>
-        Organizatorii BTS 2024 pun pe primul loc satisfacția concurenților și dorința acestora de a reveni în competiție și la edițiile viitoare. De aceea, feedback-ul reprezintă un element esențial și benefic pentru îmbunătățirea continuă a evenimentului.  Avem câteva motive foarte bune pentru a colecta impresiile participanților: Vom ști în ce măsură concurenții și-au îmbunătățit competențele IT și antreprenoriale. Înțelegem cum să ajustăm totul astfel încât să oferim un eveniment de calitate. Dorim să construim o comunitate interconectată, pentru că acest hackathon este și un eveniment social pe parcursul căruia concurenții se cunosc și relaționează între ei. Cultivăm atmosfera pozitivă prin recunoașterea eforturilor și reușitelor echipei de organizare, dar și pe cele ale concurenților, motivând astfel participarea la evenimentele viitoare.
-        În concluzie, spuneți-vă părerea, fiecare opinie este utilă și astfel Brăila Tech Sprint devine un hackathon mai performant și mai atractiv!
+          Organizatorii BTS 2024 pun pe primul loc satisfacția concurenților și
+          dorința acestora de a reveni în competiție și la edițiile viitoare. De
+          aceea, feedback-ul reprezintă un element esențial și benefic pentru
+          îmbunătățirea continuă a evenimentului. Avem câteva motive foarte bune
+          pentru a colecta impresiile participanților: Vom ști în ce măsură
+          concurenții și-au îmbunătățit competențele IT și antreprenoriale.
+          Înțelegem cum să ajustăm totul astfel încât să oferim un eveniment de
+          calitate. Dorim să construim o comunitate interconectată, pentru că
+          acest hackathon este și un eveniment social pe parcursul căruia
+          concurenții se cunosc și relaționează între ei. Cultivăm atmosfera
+          pozitivă prin recunoașterea eforturilor și reușitelor echipei de
+          organizare, dar și pe cele ale concurenților, motivând astfel
+          participarea la evenimentele viitoare. În concluzie, spuneți-vă
+          părerea, fiecare opinie este utilă și astfel Brăila Tech Sprint devine
+          un hackathon mai performant și mai atractiv!
         </p>
       </div>
       <div className="flex flex-col gap-4">
@@ -35,10 +48,10 @@ const Reviews = () => {
           Momentul în care vedeți că un proiect realizat de voi într-un timp
           atat de scurt dă roade, satisfactia oferita întrece orice sentiment.
         </FeedbackItem>
-        <FeedbackItem name="Mihai Scarlet" img={mihai} end={true}>
-          Mi-am depășit limitele și am învățat lucruri noi, contracronometru.
-          Îmi doresc ca un număr cat mai mare de elevi să se dezvolte și să își
-          cunoască adevaratul potențial.
+        <FeedbackItem name="Alex Bacalu" img={bacalu} end={true}>
+          Este o experiență provocatoare, dar care aduce satisfacție și noi
+          modalități de învățare. În plus, recomand acest concurs tuturor celor
+          pasionați de informatică și nu numai.
         </FeedbackItem>
       </div>
     </section>

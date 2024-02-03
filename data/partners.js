@@ -3,13 +3,12 @@ import conaf from "public/partners/conaf.webp";
 import pmbr from "public/partners/pmbr.png";
 import cj from "public/partners/cj.png";
 import romanel from "public/partners/romanel.png";
-import sw from "public/partners/sw.png";
 import cuptor from "public/partners/cuptor.png";
 import apan from "public/partners/apan.png";
 import isj from "public/partners/isj.png";
 import eprodesign from "public/partners/eprodesign.png";
-import alma from "public/partners/alma.png";
 import cje from "public/partners/cje.png";
+import cimbrisor from "public/partners/cimbrisor.png";
 
 export const partners = [
   {
@@ -48,14 +47,9 @@ export const partners = [
     name: "APAN Automobile",
     invert: true,
   },
-  // {
-  //   img: alma,
-  //   name: "ALMA resort",
-  // },
   {
-    img: sw,
-    name: "Solar Watts",
-    invert: true,
+    img: cimbrisor,
+    name: "Borș Cimbrișor",
   },
   {
     img: cuptor,

@@ -64,17 +64,17 @@ export default function Team() {
 
   const judges = [
     {
-      name: "Ana-Maria Stancu",
-      role: "RoboHub founder",
-      image: "/team/ana.jpeg",
+      name: "Dana Cireașă",
+      role: "Președinte CONAF Brăila",
+      image: "/team/dana.jpeg",
     },
     {
-      name: "Florentina Savu",
-      role: "CEO Solar Watts",
-      image: "/team/savu.jpeg",
+      name: "Florin Dediu",
+      role: "CEO ePro Design",
+      image: "/team/dediu.jpg",
     },
     {
-      name: "Teodor Claudiu Ciuraru",
+      name: "Teodor Ciuraru",
       role: "Senior Software Developer",
       image: "/team/teodor ciuraru.jpg",
     },
@@ -195,13 +195,13 @@ export default function Team() {
         </h1>
         <div className="mx-auto mb-6 lg:mb-8 w-16 h-1 bg-sol-yellow"></div>
         <p className="tracking-wide text-center mb-10">
-          Braila Tech Sprint este despre programare, excelență în educație,
+          Brăila Tech Sprint este despre programare, excelență în educație,
           antreprenoriat si comunitate. De aceea i-am ales pe cei mai buni să
           aprecieze munca și ideile pe care tu și echipa ta le veți aduce în
           competiție. Profesori, programatori, antreprenori sunt aici să înveți
           de la ei și să te inspire. Succes tuturor!
         </p>
-        <ul className="grid grid-cols-2 list-none mx-auto justify-center md:flex flex-wrap gap-10 max-md:gap-y-10 max-md:gap-x-4">
+        <ul className="grid grid-cols-2 list-none mx-auto justify-center md:grid-cols-4 gap-y-10 gap-x-4">
           {judges.map((member, index) => (
             <li key={index} className="flex flex-col items-center">
               <Image

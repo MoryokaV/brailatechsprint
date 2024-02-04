@@ -44,13 +44,13 @@ export const RegulamentDoc = [
     paragraphs: [
       `<strong className="text-lg">4.1 <span className="underline">Înscrierea și formarea echipelor</span></strong>
       <br></br>
-      Concurenții/echipele interesate se vor înscrie online prin intermediul formularului aflat la aceasta adresă: <a href="https://hackathon.bjbraila.ro/" className="text-sol-yellow underline hover:no-underline">https://hackathon.bjbraila.ro/</a> Etapa de înscriere online se finalizează <strong>marți, 24 februarie 2024.</strong>
+      Concurenții/echipele interesate se vor înscrie online prin intermediul formularului aflat la aceasta adresă: <a href="https://hackathon.bjbraila.ro/" className="text-sol-yellow underline hover:no-underline">https://hackathon.bjbraila.ro/</a> Etapa de înscriere online se finalizează <strong>marți, 20 februarie 2024.</strong>
       <br></br>
       Dupa înscrierea online, concurenții/echipele primesc un mail din partea organizatorilor care conține confirmarea înscrierii în hackathon. Înscrierea se consideră finalizată doar în momentul primirii acestui email de confirmare.`,
       `<strong className="text-lg">4.2 <span className="underline">Competiția propriu-zisă</span></strong>`,
       `<strong>4.2.1 Deschiderea hackatonului</strong>
       <br></br>
-      Competiția începe <strong>sâmbătă, 24 februarie 2024, ora 10:00</strong> la Biblioteca Județeană ”Panait Istrati” Brăila, Sala de lectură, etajul I, Piața Poligon nr. 4, Brăila. Accesul în sală nu mai este permis după ora menționată.<br></br>
+      Competiția începe <strong>sâmbătă, 24 februarie 2024, ora 10:00</strong> la Casa Tineretului Brăila, Calea Călărașilor 52, Brăila. Accesul în sală nu mai este permis după ora menționată.<br></br>
       Participanții vor semna o declarație pe proprie răspundere care confirmă respectarea regulamentului în vigoare. De asemenea, participanții vor trebui să dovedească, la solicitare, vârsta și, eventual, alte date cu ajutorul unor documente de identificare (buletin, certificat de naștere etc).<br></br>
       Sunt prezentați participanților membrii juriului, dar și echipa de organizare. Organizatorii anunță care este tema competiției și cerințele atașate temei, formulând  recomandări/sugestii (limbaj de programare, framework, etc), acolo unde este cazul.`,
       `<strong>4.2.2 Derularea competiției</strong><br></br>Concurenții prezenți în sala în care se va derula evenimentul sunt invitați să participe la hackathon-ul propriu-zis. Mesajul care cuprinde instrucțiunile privind modalitatea de participare, durata, criteriile de jurizare și alte elemente utile este transmis cu cel puțin 48 de ore înainte de ora de începere a competiției pe adresele de email comunicate de către participanți la momentul înscrierii și reconfirmării participării.<br></br>
@@ -73,7 +73,7 @@ export const RegulamentDoc = [
   {
     title: "Premiile competițieii",
     paragraphs: [
-      `<strong>5.1</strong> Premiile competiției vor fi asigurate prin bugetul Bibliotecii Județene ”Panait Istrati” Brăila sau diverse sponzorizări și se vor acorda, conform legislației financiar-contabile în vigoare, concurenților/echipelor clasate pe primele trei locuri, precum și pentru trei mențiuni, conform punctajelor stabilite de juriul competiției in urma aplicării criteriilor de la punctul 6 al acestui regulament.`,
+      `<strong>5.1</strong> Premiile competiției vor fi asigurate de sponsori si de bugetul Bibliotecii Județene ”Panait Istrati” și se vor acorda, conform legislației financiar-contabile în vigoare, concurenților/echipelor clasate pe primele trei locuri, precum și pentru trei mențiuni, conform punctajelor stabilite de juriul competiției in urma aplicării criteriilor de la punctul 6 al acestui regulament.`,
       `<strong>5.2</strong> Organizatorul competiției își rezervă dreptul de a nu acorda toate premiile dacă în urma evaluării realizate de către juriul competiției rezultă că nu sunt întrunite criteriile de calitate minimale de către un număr de cel puțin 3 echipe participante la competiție.`,
       `<strong>5.3</strong> Premiile pot fi suplimentate de către alți parteneri ai evenimentului, ca expresie a voinței libere a acestora de a se asocia cu evenimentul și de a acorda premii. De asemenea, dacă există solicitări din partea unor parteneri, vor putea fi instituite premii cu caracter special.`,
       `<strong>5.4</strong> Premiile acordate nu pot fi contestate.`,

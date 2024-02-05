@@ -71,8 +71,10 @@ export default function Home() {
             arăți că ai cea mai tare idee de proiect, numai bună de a deveni,
             mai târziu, propriul tău startup. Cu echipă sau fără, în 24 de ore,
             trebuie să ne convingi că poți, iar noi vom premia cele mai bune
-            inițiative. Va fi greu, dar va fi frumos! Citește regulamentul și
-            apoi înscrie-te!
+            inițiative: premiul 1: <strong>3000 RON</strong>, premiul 2:{" "}
+            <strong>1800 RON</strong>, premiul 3: <strong>900 RON</strong>, la
+            acestea se vor adăuga mențiuni și tot felul de surprize. Va fi greu,
+            dar va fi frumos! Citește regulamentul și apoi înscrie-te!
             <br></br>
             <br></br>
             <span className="text-sol-grey-dark italic">
@@ -119,7 +121,9 @@ const Masthead = () => {
 
         <button
           className="uppercase font-medium tracking-wider py-3 px-8 bg-sol-yellow text-lg text-black rounded-tl-lg rounded-br-lg hover:shadow-xl hover:bg-sol-yellow-accent hover:-translate-y-1 transition duration-200"
-          onClick={() => window.open("https://forms.gle/brMiErFFD7ZSYEBq6", "_blank")}
+          onClick={() =>
+            window.open("https://forms.gle/brMiErFFD7ZSYEBq6", "_blank")
+          }
         >
           Înscrie-te
         </button>

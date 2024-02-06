@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -18,6 +18,15 @@ const Footer = () => {
               onClick={() =>
                 window.open(
                   "https://www.instagram.com/brailatechsprint2024/",
+                  "_blank"
+                )
+              }
+            />
+            <FaTiktok
+              className="w-5 h-5 cursor-pointer"
+              onClick={() =>
+                window.open(
+                  "https://www.tiktok.com/@brailatechsprint?_t=8jehypiCHtB&_r=1",
                   "_blank"
                 )
               }

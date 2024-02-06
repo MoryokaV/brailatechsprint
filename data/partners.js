@@ -42,11 +42,11 @@ export const partners = [
     invert: true,
   },
   { img: eprodesign, name: "ePro Design" },
-  {
-    img: apan,
-    name: "APAN Automobile",
-    invert: true,
-  },
+  // {
+  //   img: apan,
+  //   name: "APAN Automobile",
+  //   invert: true,
+  // },
   {
     img: cimbrisor,
     name: "Borș Cimbrișor",

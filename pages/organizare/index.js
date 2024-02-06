@@ -160,11 +160,11 @@ export default function Team() {
           Brăila și să inspirăm tinerii să urmeze acest drum în viață. Energia
           noastră nu ar fi fost suficientă, dacă nu am fi avut alături de noi
           Biblioteca Județeană ”Panait Istrati” Brăila, Consiliul Județean
-          Brăila, Inspectoratul Școlar Județean, dar și diverși sponsori.
-          Oricine dorește să susțină performanța tinerilor programatori
-          brăileni, este invitat să ni se alăture contactându-ne la adresa de
-          email. Fiecare mână întinsă este de ajutor, evenimentul Braila Tech
-          Sprint va deveni mai bun și vom aprecia acest lucru.
+          Brăila, Inspectoratul Școlar Județean, CONAF România, dar și diverși
+          sponsori. Oricine dorește să susțină performanța tinerilor
+          programatori brăileni, este invitat să ni se alăture contactându-ne la
+          adresa de email. Fiecare mână întinsă este de ajutor, evenimentul
+          Braila Tech Sprint va deveni mai bun și vom aprecia acest lucru.
         </p>
         <br></br>
         <p className="flex justify-center font-semibold italic mb-4 text-sol-grey-accent">

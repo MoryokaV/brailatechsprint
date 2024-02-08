@@ -11,7 +11,7 @@ const Terminal = () => {
         <span className="w-9"></span>
       </header>
       <section className="p-4 h-auto text-green-200 font-mono text-xs">
-        <p className="mb-1">Last login: Sat Mar 16 10:24:03 on ttys002</p>
+        <p className="mb-1">Last login: Sat Feb 24 10:24:03 on ttys002</p>
         <p className="mb-1">Hack:projects user$ git status</p>
         <p className="mb-1">Already up-to-date</p>
         <p className="mb-1">

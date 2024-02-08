@@ -18,7 +18,7 @@ export default function Team() {
     {
       name: "Mario Vlaviano",
       role: "Project Manager",
-      image: "/team/mario vlaviano 1.jpeg",
+      image: "/team/mario vlaviano 3.png",
       social: {
         instagram: "https://www.instagram.com/mario.vlv/",
         facebook: "https://www.facebook.com/mario.vlaviano.75",

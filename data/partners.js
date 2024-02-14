@@ -14,6 +14,7 @@ import cje from "public/partners/cje.png";
 import cimbrisor from "public/partners/cimbrisor.png";
 import frontera from "public/partners/frontera.png";
 import uninstal from "public/partners/uninstal.png";
+import ime from "public/partners/ime.png";
 
 export const partners = [
   {
@@ -56,6 +57,10 @@ export const partners = [
   //   name: "APAN Automobile",
   //   invert: true,
   // },
+  {
+    img: ime,
+    name: "IME Romania",
+  },
   {
     img: termhidro,
     name: "TermHidro Braila",

@@ -7,14 +7,17 @@ import cuptor from "public/partners/cuptor.png";
 import cngmm from "public/partners/cngmm.png";
 import termhidro from "public/partners/termhidro.png";
 import vard from "public/partners/vard.png";
-import apan from "public/partners/apan.png";
 import isj from "public/partners/isj.png";
 import eprodesign from "public/partners/eprodesign.png";
 import cje from "public/partners/cje.png";
 import cimbrisor from "public/partners/cimbrisor.png";
-import frontera from "public/partners/frontera.png";
 import uninstal from "public/partners/uninstal.png";
 import ime from "public/partners/ime.png";
+import pancronex from "public/partners/pancronex.png";
+import franklin from "public/partners/franklin.png";
+import electrix from "public/partners/electrix.png";
+import bento from "public/partners/bento.png";
+import amibios from "public/partners/amibios.png";
 
 export const partners = [
   {
@@ -52,14 +55,18 @@ export const partners = [
     invert: true,
   },
   { img: eprodesign, name: "ePro Design" },
-  // {
-  //   img: apan,
-  //   name: "APAN Automobile",
-  //   invert: true,
-  // },
   {
     img: ime,
     name: "IME Romania",
+  },
+  {
+    img: pancronex,
+    name: "Pancronex",
+  },
+  {
+    img: cuptor,
+    name: "Cuptor pe vatra",
+    invert: true,
   },
   {
     img: termhidro,
@@ -70,21 +77,30 @@ export const partners = [
     name: "Vard",
   },
   {
-    img: cuptor,
-    name: "Cuptor pe vatra",
-    invert: true,
-  },
-  {
     img: uninstal,
     name: "Uninstal",
     invert: true,
   },
   {
-    img: frontera,
-    name: "Frontera",
-  },
-  {
     img: cimbrisor,
     name: "Borș Cimbrișor",
+  },
+  {
+    img: franklin,
+    name: "Franklin Templeton",
+    invert: true,
+  },
+  {
+    img: electrix,
+    name: "Electrix",
+    invert: true,
+  },
+  {
+    img: bento,
+    name: "Bento",
+  },
+  {
+    img: amibios,
+    name: "AmiBios",
   },
 ];

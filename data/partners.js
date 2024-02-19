@@ -18,6 +18,8 @@ import franklin from "public/partners/franklin.png";
 import electrix from "public/partners/electrix.png";
 import bento from "public/partners/bento.png";
 import amibios from "public/partners/amibios.png";
+import anbpr from "public/partners/anbpr.png";
+import ccbr from "public/partners/ccbr.png";
 
 export const partners = [
   {
@@ -48,6 +50,15 @@ export const partners = [
   {
     img: cngmm,
     name: "Colegiul National Gh.M.Murgoci",
+  },
+  {
+    img: anbpr,
+    name: "Asociatia nationala a bibliotecarior Braila",
+    invert: true,
+  },
+  {
+    img: ccbr,
+    name: "Casa de cultura Braila",
   },
   {
     img: romanel,
